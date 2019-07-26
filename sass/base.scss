@@ -69,6 +69,9 @@ $qfc: #81a565;
 
 .header {
 	padding: 1em 0em 1em 0em;
+	@include mq($from: desktop) {
+		padding: 2.5em 0em 1em 0em;
+	}
 }
 
 .subheader {
@@ -77,13 +80,25 @@ $qfc: #81a565;
 
 nav {
 	padding-bottom: 2em;
+}
 
-	@include mq($from: tablet, $until: desktop) {
-		padding-bottom: 8em;
+#gap {
+	@include mq($from: tablet) {
+		height: 8em;
 	}
 
 	@include mq($from: desktop) {
-		padding-bottom: 16em !important;
+		height: 20em;
+	}
+}
+
+#profile {
+	display: none;
+
+	@include mq($from: desktop) {
+		float: right;
+		margin-bottom: -1.5em;
+		display: block;
 	}
 }
 
@@ -240,6 +255,11 @@ span {
 	position: fixed;
 	top: 0;
 	padding-left: 2em;
+
+	@include mq($from: tablet) {
+		padding-left: 7em;
+	}
+
 	left: 0;
 	z-index: 100;
 	width: 100%;

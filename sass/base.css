@@ -20,6 +20,12 @@
   padding: 1em 0em 1em 0em;
 }
 
+@media (min-width: 56.25em) {
+  .header {
+    padding: 2.5em 0em 1em 0em;
+  }
+}
+
 .subheader {
   font-size: 1.5rem;
 }
@@ -34,15 +40,27 @@ nav {
   padding-bottom: 2em;
 }
 
-@media (min-width: 43.75em) and (max-width: 56.24em) {
-  nav {
-    padding-bottom: 8em;
+@media (min-width: 43.75em) {
+  #gap {
+    height: 8em;
   }
 }
 
 @media (min-width: 56.25em) {
-  nav {
-    padding-bottom: 16em !important;
+  #gap {
+    height: 20em;
+  }
+}
+
+#profile {
+  display: none;
+}
+
+@media (min-width: 56.25em) {
+  #profile {
+    float: right;
+    margin-bottom: -1.5em;
+    display: block;
   }
 }
 
@@ -285,6 +303,12 @@ span {
   width: 100%;
   -webkit-box-shadow: 0 0em 1em rgba(0, 0, 0, 0.1);
           box-shadow: 0 0em 1em rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 43.75em) {
+  .sticky {
+    padding-left: 7em;
+  }
 }
 
 .sticky + #top {

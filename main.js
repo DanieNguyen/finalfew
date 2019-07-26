@@ -24,4 +24,5 @@ function linkChange() {
 }
 
 //When the window resizes, change link if mobile
+window.onload = function() {linkChange()};
 window.onresize = function() {linkChange()};
