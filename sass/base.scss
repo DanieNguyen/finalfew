@@ -72,16 +72,47 @@ $qfc: #81a565;
 }
 
 .subheader {
+	@include rfs(24);
+}
+
+nav {
 	padding-bottom: 2em;
 
-	@include mq($from: desktop) {
-		padding-bottom: 16em;
+	@include mq($from: tablet, $until: desktop) {
+		padding-bottom: 8em;
 	}
+
+	@include mq($from: desktop) {
+		padding-bottom: 16em !important;
+	}
+}
+
+.navlink {
+	font-family: $bold !important;
+	color: black;
+	margin-right: 0.8em;
+	
+	@include mq($from:large) {
+		margin-right: 1.2em;
+	}
+
+	@include mq($from:tablet) {
+		margin-right: 2em;
+	}
+}
+
+.navlink:hover {
+	color: $color;
+}
+
+.navlink::after {
+	color: black;
 }
 
 a {
 	text-decoration: none;
 }
+
 
 h1 {
 	font-family: $bold;
@@ -90,10 +121,6 @@ h1 {
 
 h2 {
 	font-family: $bold;
-	@include rfs(24);
-}
-
-.subheader {
 	@include rfs(24);
 }
 
@@ -132,7 +159,8 @@ span {
 	background-position: center;
 	margin-bottom: 2.5em;
 	@include mq($from: desktop) {
-		@include rfs(24);
+		height: 10em;
+		@include rfs(18);
 	}
 }
 

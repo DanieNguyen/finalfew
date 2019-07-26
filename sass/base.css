@@ -21,13 +21,55 @@
 }
 
 .subheader {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .subheader {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+nav {
   padding-bottom: 2em;
 }
 
-@media (min-width: 56.25em) {
-  .subheader {
-    padding-bottom: 16em;
+@media (min-width: 43.75em) and (max-width: 56.24em) {
+  nav {
+    padding-bottom: 8em;
   }
+}
+
+@media (min-width: 56.25em) {
+  nav {
+    padding-bottom: 16em !important;
+  }
+}
+
+.navlink {
+  font-family: Inter-Bold !important;
+  color: black;
+  margin-right: 0.8em;
+}
+
+@media (min-width: 35em) {
+  .navlink {
+    margin-right: 1.2em;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .navlink {
+    margin-right: 2em;
+  }
+}
+
+.navlink:hover {
+  color: #80DEEA;
+}
+
+.navlink::after {
+  color: black;
 }
 
 a {
@@ -52,16 +94,6 @@ h2 {
 
 @media (max-width: 1200px) {
   h2 {
-    font-size: calc(1.275rem + 0.3vw) ;
-  }
-}
-
-.subheader {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 1200px) {
-  .subheader {
     font-size: calc(1.275rem + 0.3vw) ;
   }
 }
@@ -109,13 +141,8 @@ span {
 
 @media (min-width: 56.25em) {
   .garbox {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 56.25em) and (max-width: 1200px) {
-  .garbox {
-    font-size: calc(1.275rem + 0.3vw) ;
+    height: 10em;
+    font-size: 1.125rem;
   }
 }
 
@@ -141,13 +168,8 @@ span {
 
 @media (min-width: 56.25em) {
   .hbox {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 56.25em) and (max-width: 1200px) {
-  .hbox {
-    font-size: calc(1.275rem + 0.3vw) ;
+    height: 10em;
+    font-size: 1.125rem;
   }
 }
 
@@ -168,13 +190,8 @@ span {
 
 @media (min-width: 56.25em) {
   .pbox {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 56.25em) and (max-width: 1200px) {
-  .pbox {
-    font-size: calc(1.275rem + 0.3vw) ;
+    height: 10em;
+    font-size: 1.125rem;
   }
 }
 
@@ -200,13 +217,8 @@ span {
 
 @media (min-width: 56.25em) {
   .qbox {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 56.25em) and (max-width: 1200px) {
-  .qbox {
-    font-size: calc(1.275rem + 0.3vw) ;
+    height: 10em;
+    font-size: 1.125rem;
   }
 }
 
