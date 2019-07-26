@@ -15,3 +15,13 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+//If window is mobile, change contact link to telephone
+function linkChange() {
+    if (window.innerWidth < 700) {
+        document.getElementById("contact").href = "tel:4252159646";
+    }
+}
+
+//When the window resizes, change link if mobile
+window.onresize = function() {linkChange()};
