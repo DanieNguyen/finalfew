@@ -30,6 +30,10 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: Inter-Bold;
   font-size: 4rem;
@@ -60,6 +64,10 @@ h2 {
   .subheader {
     font-size: calc(1.275rem + 0.3vw) ;
   }
+}
+
+p {
+  color: black;
 }
 
 span {
