@@ -249,3 +249,7 @@ span {
 .sticky + #top {
 	padding-top: 2.5em !important;
 }
+
+footer {
+	@include rfs(14);
+}
