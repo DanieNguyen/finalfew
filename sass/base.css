@@ -155,7 +155,7 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
-  background-image: url("../images/chat.png");
+  background-image: url("../../images/chat.png");
 }
 
 @media (min-width: 56.25em) {
