@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Inter-Bold";
+  font-style: woff;
+  src: url(".eot?") format("eot"), url(".woff2") format("woff2"), url(".woff") format("woff"), url(".ttf") format("truetype"), url(".svg#Inter-Bold") format("svg");
+}
+@font-face {
+  font-family: "Inter-Light-BETA";
+  font-style: woff;
+  src: url(".eot?") format("eot"), url(".woff2") format("woff2"), url(".woff") format("woff"), url(".ttf") format("truetype"), url(".svg#Inter-Light-BETA") format("svg");
+}
+h1 {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

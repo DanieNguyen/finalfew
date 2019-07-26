@@ -1,0 +1,188 @@
+@import 'media-queries';
+@import "../node_modules/rfs/scss";
+
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face(Inter-Bold, "../fonts/Inter-Bold", null, null, woff);
+@include font-face(Inter-Light-BETA, "../fonts/Inter-Light-BETA", null, null, woff);
+
+$light: Inter-Light-BETA;
+$bold: Inter-Bold;
+$color: #80DEEA;
+
+//portfolio piece colors
+$garmin: #007cc3;
+$hive: #ebc347;
+$piaro: #f38638;
+$qfc: #81a565;
+
+* {
+	font-family: $light;
+}
+
+.container {
+	padding: 2em;
+}
+
+.header {
+	padding: 1em 0em 1em 0em;
+}
+
+.subheader {
+	padding-bottom: 2em;
+
+	@include mq($from: desktop) {
+		padding-bottom: 16em;
+	}
+}
+
+
+h1 {
+	font-family: $bold;
+	@include rfs(64);
+}
+
+h2 {
+	font-family: $bold;
+	@include rfs(24);
+}
+
+.subheader {
+	@include rfs(24);
+}
+
+span {
+	color: $color;
+	font-family: $bold;
+}
+
+.garmin {
+	color: $garmin;
+}
+
+.hive {
+	color: $hive;
+}
+
+.piaro {
+	color: $piaro;
+}
+
+.qfc {
+	color: $qfc;
+	text-align: right;
+}
+
+@mixin card {
+	display: flex;
+	align-items: center;
+	height: 8em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 2.5em;
+	@include mq($from: desktop) {
+		@include rfs(24);
+	}
+}
+
+.garbox {
+	@include card;
+	background-image: url('/images/garmin.png');
+}
+
+.hbox {
+	@include card;
+	background-image: url('/images/hivequeen.png');
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.pbox {
+	@include card;
+	background-image: url('/images/chat.png');
+}
+
+.qbox {
+	@include card;
+	background-image: url('/images/qfc.png');
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+/* Grow */
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.hvr-grow:hover .underline, .hvr-grow:focus .underline, .hvr-grow:active .underline {
+	border-bottom: 0.1em solid $garmin;
+}
+
+.hvr-grow:hover .underline1, .hvr-grow:focus .underline1, .hvr-grow:active .underline1 {
+	border-bottom: 0.1em solid $hive;
+}
+
+.hvr-grow:hover .underline2, .hvr-grow:focus .underline2, .hvr-grow:active .underline2 {
+	border-bottom: 0.1em solid $piaro;
+}
+
+.hvr-grow:hover .underline3, .hvr-grow:focus .underline3, .hvr-grow:active .underline3 {
+	border-bottom: 0.1em solid $qfc;
+}
