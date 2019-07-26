@@ -167,6 +167,11 @@ span {
 .garbox {
 	@include card;
 	background-image: url('../images/garmin.png');
+	margin-top: 2em;
+
+	@include mq($from: large) {
+		margin-top: 0em;
+	}
 }
 
 .hbox {
@@ -220,4 +225,27 @@ span {
 
 .hvr-grow:hover .underline3, .hvr-grow:focus .underline3, .hvr-grow:active .underline3 {
 	border-bottom: 0.1em solid $qfc;
+}
+
+#navbar {
+	background-color: white;
+}
+
+#nav {
+	padding-top: 0.5em;
+	max-height: 2.5em !important;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	padding-left: 2em;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	box-shadow: 0 0em 1em rgba(0,0,0,0.1);
+}
+
+.sticky + #top {
+	padding-top: 2.5em !important;
 }
