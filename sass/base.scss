@@ -78,20 +78,6 @@ $qfc: #81a565;
 	@include rfs(24);
 }
 
-nav {
-	padding-bottom: 2em;
-}
-
-#gap {
-	@include mq($from: tablet) {
-		height: 8em;
-	}
-
-	@include mq($from: desktop) {
-		height: 20em;
-	}
-}
-
 #profile {
 	display: none;
 
@@ -242,34 +228,42 @@ span {
 	border-bottom: 0.1em solid $qfc;
 }
 
-#navbar {
-	background-color: white;
-}
-
-#nav {
-	padding-top: 0.5em;
-	max-height: 2.5em !important;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	padding-left: 2em;
-
+#gap {	
 	@include mq($from: tablet) {
-		padding-left: 7em;
+		height: 8em;
 	}
 
-	left: 0;
-	z-index: 100;
-	width: 100%;
-	box-shadow: 0 0em 1em rgba(0,0,0,0.1);
+	@include mq($from: desktop) {
+		height: 20em;
+	}
 }
 
-.sticky + #top {
-	padding-top: 2.5em !important;
+.nav-wrapper {
+    height: 2.5rem;
+	line-height: 2.5rem;
+}
+
+.nav-wrapper .nav {
+    height: 2.5rem;
+	line-height: 2.5rem;
+}
+
+.nav-wrapper .nav.fixed {
+    position: fixed;
+	z-index: 10000;
+	background: white;
+	width: 100%;
+    top: 0;
+	left: 0;
+	padding-left: 3rem;
+	@include mq($from: tablet) {
+		padding-left: 7rem;
+	}
+	box-shadow: 0 0em 1em rgba(0,0,0,0.1);
+
 }
 
 footer {
 	@include rfs(14);
+		
 }

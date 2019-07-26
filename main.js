@@ -1,28 +1,37 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+$(document).ready(function () {
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+  // jQuery methods go here...
+  // cache the element
+  var $navBar = $('.nav');
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+  // find original navigation bar position
+  var navPos = $navBar.offset().top;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+  // on scroll
+  $(window).scroll(function () {
 
-//If window is tablet+, change contact link to email
-function linkChange() {
-    if (window.innerWidth > 700) {
-        document.getElementById("contact").href = "mailto:danngu@uw.edu";
+    // get scroll position from top of the page
+    var scrollPos = $(this).scrollTop();
+
+    // check if scroll position is >= the nav position
+    if (scrollPos >= navPos) {
+      if (window.innerWidth < 700) {
+        $navBar.addClass('fixed');
+      }
+    } else {
+      $navBar.removeClass('fixed');
     }
-}
 
-//When the window resizes, change link if mobile
-window.onload = function() {linkChange()};
-window.onresize = function() {linkChange()};
+  });
+
+  //If window is tablet+, change contact link to email
+  function linkChange() {
+    if (window.innerWidth > 700) {
+      document.getElementById("contact").href = "mailto:danngu@uw.edu";
+    }
+  }
+
+  //When the window resizes, change link if mobile
+  window.onload = function () { linkChange() };
+  window.onresize = function () { linkChange() };
+});
