@@ -131,24 +131,24 @@ span {
 
 .garbox {
 	@include card;
-	background-image: url('/images/garmin.png');
+	background-image: url('../images/garmin.png');
 }
 
 .hbox {
 	@include card;
-	background-image: url('/images/hivequeen.png');
+	background-image: url('../images/hivequeen.png');
 	flex-direction: row-reverse;
 	text-align: right;
 }
 
 .pbox {
 	@include card;
-	background-image: url('/images/chat.png');
+	background-image: url('../images/chat.png');
 }
 
 .qbox {
 	@include card;
-	background-image: url('/images/qfc.png');
+	background-image: url('../images/qfc.png');
 	flex-direction: row-reverse;
 	text-align: right;
 }
