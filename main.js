@@ -16,10 +16,10 @@ function myFunction() {
   }
 }
 
-//If window is mobile, change contact link to telephone
+//If window is tablet+, change contact link to email
 function linkChange() {
-    if (window.innerWidth < 700) {
-        document.getElementById("contact").href = "tel:4252159646";
+    if (window.innerWidth > 700) {
+        document.getElementById("contact").href = "mailto:danngu@uw.edu";
     }
 }
 
