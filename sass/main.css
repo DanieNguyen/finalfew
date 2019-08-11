@@ -8,6 +8,10 @@
   src: url("../fonts/Inter-Light-BETA.woff") format("woff");
 }
 
+html {
+  overflow-y: scroll;
+}
+
 * {
   font-family: Inter-Light-BETA;
 }
@@ -66,12 +70,8 @@
   }
 }
 
-.navlink:hover {
+.navlink:hover, .navactive {
   color: #80DEEA;
-}
-
-.navlink::after {
-  color: black;
 }
 
 a {
@@ -311,6 +311,52 @@ span {
 
 footer {
   font-size: 0.875rem;
+}
+
+#call {
+  color: black;
+  border-bottom: 1px solid #80DEEA;
+}
+
+#call:hover {
+  color: #80DEEA;
+}
+
+form {
+  font-family: Inter-Bold !important;
+  margin-top: 10em;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-family: Inter-Light-BETA;
+  padding: 0.75em 0.5em 0.75em 0.5em;
+  margin: 0.5em 0 1.75em 0;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#submit {
+  border: 2px solid #80DEEA;
+  width: 25%;
+  background-color: transparent;
+  font-family: Inter-Bold;
+}
+
+#submit:hover {
+  border: 2px solid #80DEEA;
+  width: 25%;
+  color: white;
+  background-color: #80DEEA;
+}
+
+.contact {
+  padding-top: 2em;
 }
 
 *, *:after, *:before {

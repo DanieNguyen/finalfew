@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel Nguyen</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+
+<body class="container">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-7">
+                <h1 class="header">Contact<span>.</span></h1>
+                <p class="subheader"><a id="call" href="tel:4252159646">Call me</a>, beep me if you wanna <span>reach me</span> :)</p>
+                <div id="navbar">
+                    <div class="nav-wrapper contact">
+                        <nav class="nav">
+                            <a class="navlink hvr-grow" href="resume.pdf" target="_blank">resume</a>
+                            <a class="navlink hvr-grow navactive" id="contact" href="contact.html">contact</a>
+                            <a class="navlink hvr-grow" href="about.html">about</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <form action="form.php" method="POST">
+                    name <br><input type="text" name="name" placeholder="Kim Possible">
+                    email <br><input type="text" name="email" placeholder="email@website.com">
+                    message <br><textarea class='autoExpand' rows='2' data-min-rows='2' placeholder='type your message here...'></textarea>
+                    <input type="button" id="submit" name="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -24,14 +24,17 @@ $(document).ready(function () {
 
   });
 
-  //If window is tablet+, change contact link to email
-  function linkChange() {
-    if (window.innerWidth > 700) {
-      document.getElementById("contact").href = "mailto:danngu@uw.edu";
-    }
-  }
-
-  //When the window resizes, change link if mobile
-  window.onload = function () { linkChange() };
-  window.onresize = function () { linkChange() };
-});
+  // Applied globally on all textareas with the "autoExpand" class
+  $(document)
+    .one('focus.autoExpand', 'textarea.autoExpand', function () {
+      var savedValue = this.value;
+      this.value = '';
+      this.baseScrollHeight = this.scrollHeight;
+      this.value = savedValue;
+    })
+    .on('input.autoExpand', 'textarea.autoExpand', function () {
+      var minRows = this.getAttribute('data-min-rows') | 0, rows;
+      this.rows = minRows;
+      rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 16);
+      this.rows = minRows + rows;
+    });})
