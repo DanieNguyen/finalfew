@@ -336,6 +336,12 @@ input, textarea {
   margin: 0.5em 0 1.75em 0;
 }
 
+@media (max-width: 43.74em) {
+  input, textarea {
+    font-size: 1.25em;
+  }
+}
+
 textarea {
   min-width: 100%;
   max-width: 100%;
