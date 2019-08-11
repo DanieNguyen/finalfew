@@ -278,8 +278,13 @@ footer {
 
 form {
 	font-family: $bold !important;
-	margin-top: 10em;
+	margin-top: 2em;
+
+	@include mq($from: desktop) {
+		margin-top: 10em;
+	}
 }
+
 input, textarea {
 	width:100%;
 	border: 1px solid gray;
@@ -287,10 +292,7 @@ input, textarea {
 	font-family: $light;
 	padding: 0.75em 0.5em 0.75em 0.5em;
 	margin: 0.5em 0 1.75em 0;
-
-	@include mq($until: tablet) {
-		font-size: 1.25em;
-	}
+	font-size: 1em;
 }
 
 textarea {
@@ -303,6 +305,9 @@ textarea {
 	width: 25%;
 	background-color: transparent;
 	font-family: $bold;
+	@include mq($until: tablet) {
+		width: 50%;
+	}
 }
 
 #submit:hover {
@@ -310,6 +315,9 @@ textarea {
 	width: 25%;
 	color: white;
 	background-color: $color;
+	@include mq($until: tablet) {
+		width: 50%;
+	}
 }
 .contact {
 	padding-top: 2em;

@@ -324,7 +324,13 @@ footer {
 
 form {
   font-family: Inter-Bold !important;
-  margin-top: 10em;
+  margin-top: 2em;
+}
+
+@media (min-width: 56.25em) {
+  form {
+    margin-top: 10em;
+  }
 }
 
 input, textarea {
@@ -334,12 +340,7 @@ input, textarea {
   font-family: Inter-Light-BETA;
   padding: 0.75em 0.5em 0.75em 0.5em;
   margin: 0.5em 0 1.75em 0;
-}
-
-@media (max-width: 43.74em) {
-  input, textarea {
-    font-size: 1.25em;
-  }
+  font-size: 1em;
 }
 
 textarea {
@@ -354,11 +355,23 @@ textarea {
   font-family: Inter-Bold;
 }
 
+@media (max-width: 43.74em) {
+  #submit {
+    width: 50%;
+  }
+}
+
 #submit:hover {
   border: 2px solid #80DEEA;
   width: 25%;
   color: white;
   background-color: #80DEEA;
+}
+
+@media (max-width: 43.74em) {
+  #submit:hover {
+    width: 50%;
+  }
 }
 
 .contact {
