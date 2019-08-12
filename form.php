@@ -14,5 +14,5 @@
 
     mail($to, $email_sub, $email_body, $headers);
 
-    header("Location: index.html");
+    header("Location: contact.html");
 ?>
