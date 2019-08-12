@@ -1,8 +1,18 @@
-<html>
-<body>
+<?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-Welcome <?php echo $_POST["name"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
+    $email_from = 'danngu@uw.edu';
+    $email_sub = 'New Form Submission';
+    $email_body = 'Name: $name \n'. 'Email: $email \n'. 'Message: $message \n';
 
-</body>
-</html>
+    $to = 'danngu@uw.edu';
+
+    $headers = "From: $email_from \r\n";
+    $headers .= "Reply-To: $email \r\n";
+
+    mail($to, $email_sub, $email_body, $headers);
+
+    header("Location: index.html");
+?>
