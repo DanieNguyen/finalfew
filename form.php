@@ -5,7 +5,7 @@
 
     $email_from = 'danngu@uw.edu';
     $email_sub = 'New Form Submission';
-    $email_body = 'Name: $name \n'. 'Email: $email \n'. 'Message: $message \n';
+    $email_body = 'Name: $name \n Email: $email \n Message: $message \n';
 
     $to = 'danngu@uw.edu';
 
