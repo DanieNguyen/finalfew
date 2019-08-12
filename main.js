@@ -22,25 +22,6 @@ $(document).ready(function () {
       $navBar.removeClass('fixed');
     }
 
-      $(function () {
-        $(".ajaxForm").submit(function (e) {
-          e.preventDefault();
-          var href = $(this).attr("action");
-          $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: href,
-            data: $(this).serialize(),
-            success: function (response) {
-              if (response.status == "success") {
-                window.location.href = 'danielnguyen.org/about.html'; // change this. 
-              } else {
-                alert("An error occured: " + response.message);
-              }
-            }
-          });
-        });
-      });
   });
 
   // Applied globally on all textareas with the "autoExpand" class
@@ -56,4 +37,4 @@ $(document).ready(function () {
       this.rows = minRows;
       rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 16);
       this.rows = minRows + rows;
-    });})
+    });
