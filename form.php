@@ -1,18 +1,14 @@
-<?php
+<?php 
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $email_from = 'danngu@uw.edu';
-    $email_sub = 'New Form Submission';
-    $email_body = 'Name: $name \n'. 'Email: $email \n'. 'Message: $message \n';
+    $formcontent="From: $name \n Message: $message";
+    $recipient = "danngu@uw.edu";
 
-    $to = 'danngu@uw.edu';
+    $subject = "Contact Form";
+    $mailheader = "From: $email \r\n";
 
-    $headers = "From: $email_from \r\n";
-    $headers .= "Reply-To: $email \r\n";
-
-    mail($to, $email_sub, $email_body, $headers);
-
-    header("Location: contact.html");
+    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+    echo "Thank You!";
 ?>
