@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "autosize": "^4.0.2",
     "rfs": "^8.0.4"
   }
 }
