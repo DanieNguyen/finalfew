@@ -3,9 +3,10 @@ $(document).ready(function () {
   // jQuery methods go here...
   // cache the element
   var $navBar = $('.nav');
+  var $navWrap = $('.nav-wrapper');
 
   // find original navigation bar position
-  var navPos = $navBar.offset().top;
+  var navPos = $navWrap.offset().top;
 
   // on scroll
   $(window).scroll(function () {
@@ -14,14 +15,24 @@ $(document).ready(function () {
     var scrollPos = $(this).scrollTop();
 
     // check if scroll position is >= the nav position
-    if (scrollPos >= navPos) {
-      if (window.innerWidth < 700) {
+    if (this.innerWidth >= 700) {
+      if (scrollPos >= navPos - 15) {
         $navBar.addClass('fixed');
+      } else {
+        $navBar.removeClass('fixed');
       }
     } else {
-      $navBar.removeClass('fixed');
+      if (scrollPos >= navPos) {
+        $navBar.addClass('fixed');
+      } else {
+        $navBar.removeClass('fixed');
+      }
     }
 
   });
-    
+
+  $.getScript("node_modules/autosize/dist/autosize.js", function () {
+    autosize(document.querySelector('textarea'));
+  });
+
 });
