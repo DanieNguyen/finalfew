@@ -17,7 +17,7 @@ html {
 }
 
 .container {
-  padding: 1em 2em 1em 2em;
+  padding: 1em 3em 1em 3em;
 }
 
 .header {
@@ -38,6 +38,10 @@ html {
   .subheader {
     font-size: calc(1.275rem + 0.3vw) ;
   }
+}
+
+.landingpic {
+  margin-top: 2em;
 }
 
 #profile {
@@ -127,12 +131,10 @@ span {
 
 .qfc {
   color: #81a565;
-  text-align: right;
 }
 
 .side {
   color: #2d82e2;
-  text-align: right;
 }
 
 .garbox {
@@ -147,20 +149,14 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
-  background-image: url("../images/garmin.png");
-  margin-top: 2em;
+  background-image: url("../images/garmin.svg");
+  background-size: 40%;
 }
 
 @media (min-width: 56.25em) {
   .garbox {
     height: 10em;
     font-size: 1.125rem;
-  }
-}
-
-@media (min-width: 35em) {
-  .garbox {
-    margin-top: 0em;
   }
 }
 
@@ -176,7 +172,7 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
-  background-image: url("../images/hivequeen.png");
+  background-image: url("../images/hivequeen.svg");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -204,7 +200,7 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
-  background-image: url("../images/chat.png");
+  background-image: url("../images/chat.svg");
   background-size: 60%;
 }
 
@@ -227,7 +223,7 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
-  background-image: url("../images/astro.png");
+  background-image: url("../images/astro.svg");
 }
 
 @media (min-width: 56.25em) {
@@ -249,7 +245,7 @@ span {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
-  background-image: url("../images/qfc.png");
+  background-image: url("../images/qfc.svg");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -356,25 +352,11 @@ span {
 .nav-wrapper .nav.fixed {
   position: fixed;
   z-index: 10000;
-  background: white;
   width: 100%;
+  height: 4em;
+  padding-top: 1em;
   top: 0;
-  left: 0;
-  padding-left: 3em;
-  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
-}
-
-@media (min-width: 43.75em) and (max-width: 56.24em) {
-  .nav-wrapper .nav.fixed {
-    padding-left: 4em;
-  }
-}
-
-@media (min-width: 56.25em) {
-  .nav-wrapper .nav.fixed {
-    padding: 1em 0em 3em 8em;
-  }
+  background: white;
 }
 
 footer {
@@ -390,13 +372,8 @@ footer {
   color: #80DEEA;
 }
 
-table {
-  font-family: Inter-Light-BETA;
-  font-size: 0.875rem;
-}
-
 @media (min-width: 56.25em) {
-  table {
+  .intro, .facts {
     margin-top: 4em;
   }
 }
@@ -418,7 +395,6 @@ td {
 form {
   font-family: Inter-Bold !important;
   margin-top: 2em;
-  font-family: Inter-Light-BETA;
 }
 
 @media (min-width: 56.25em) {
@@ -473,6 +449,23 @@ textarea {
 
 .contact {
   padding-top: 2em;
+}
+
+.textheader {
+  font-size: 1.375rem;
+  font-family: Inter-Bold;
+}
+
+@media (max-width: 1200px) {
+  .textheader {
+    font-size: calc(1.2625rem + 0.15vw) ;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .text {
+    margin-top: 4em;
+  }
 }
 
 *, *:after, *:before {
@@ -559,7 +552,7 @@ img {
 @media (min-width: 56.25em) {
   .wrapper {
     width: 95%;
-    max-width: 65em;
+    max-width: 55em;
   }
   .col-1 {
     width: 8.33333%;

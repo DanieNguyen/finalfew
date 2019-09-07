@@ -82,7 +82,7 @@ img {
 @media (min-width: 56.25em) {
   .wrapper {
     width: 95%;
-    max-width: 65em;
+    max-width: 55em;
   }
   .col-1 {
     width: 8.33333%;
