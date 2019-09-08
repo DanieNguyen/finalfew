@@ -132,6 +132,7 @@ h2 {
 
 p {
 	color: black;
+	line-height: 1.5em;
 }
 
 span {
@@ -307,6 +308,10 @@ footer {
 
 .intro, .facts {
 	@include spacing();
+}
+
+table {
+	margin-right: -1em;
 }
 
 th {
