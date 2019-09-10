@@ -101,7 +101,10 @@ html {
 	font-family: $bold !important;
 	color: black;
 	margin-right: 0.8em;
-	
+	@include mq($from: mobile-sm, $until: mobile) {
+		@include rfs(14);
+	}
+
 	@include mq($from:large) {
 		margin-right: 1.2em;
 	}
@@ -301,9 +304,7 @@ footer {
 }
 
 @mixin spacing {
-	@include mq($from: desktop) {
-		margin-top: 4em;
-	}
+	margin-top: 4em;
 }
 
 .intro, .facts {
