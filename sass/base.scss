@@ -88,9 +88,6 @@ html {
 
 .landingpic {
 	margin-top: 2em;
-	@include mq($from: mobile-sm, $until: tablet) {
-	
-	}
 }
 
 #profile {
