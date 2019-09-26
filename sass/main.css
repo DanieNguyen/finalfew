@@ -17,7 +17,13 @@ html {
 }
 
 .container {
-  padding: 1em 3em 1em 3em;
+  padding: 1em 2em 1em 2em;
+}
+
+@media (min-width: 43.75em) {
+  .container {
+    padding: 1em 3em 1em 3em;
+  }
 }
 
 .header {
@@ -389,7 +395,7 @@ table {
 
 th {
   font-family: Inter-Bold;
-  padding: .75em;
+  padding: .75em 0em .75em 0em;
   text-align: left;
 }
 
@@ -398,7 +404,7 @@ th {
 }
 
 td {
-  padding: .75em;
+  padding: .75em 0em .75em .75em;
 }
 
 form {

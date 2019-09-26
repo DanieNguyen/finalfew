@@ -320,7 +320,7 @@ table {
 
 th {
 	font-family: $bold;
-	padding: .75em;
+	padding: .75em 0em .75em 0em;
 	text-align: left;
 }
 
@@ -329,7 +329,7 @@ th {
 }
 
 td {
-	padding: .75em;
+	padding: .75em 0em .75em .75em;
 }
 form {
 	font-family: $bold !important;
