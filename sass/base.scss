@@ -343,8 +343,11 @@ td {
 }
 form {
 	font-family: $bold !important;
-	margin-top: 2em;
-	@include spacing();
+	margin-top: 6em;
+	@include mq($from: desktop) {
+		width: 50%;
+	}
+
 }
 
 input, textarea {

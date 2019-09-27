@@ -418,8 +418,13 @@ td {
 
 form {
   font-family: Inter-Bold !important;
-  margin-top: 2em;
-  margin-top: 1em;
+  margin-top: 6em;
+}
+
+@media (min-width: 56.25em) {
+  form {
+    width: 50%;
+  }
 }
 
 input, textarea {
