@@ -86,10 +86,6 @@ html {
 	@include rfs(24);
 }
 
-.landingpic {
-	margin-top: 2em;
-}
-
 #profile {
 	display: none;
 
@@ -125,20 +121,39 @@ a {
 	text-decoration: none;
 }
 
+@mixin boldhead {
+	font-family: $bold;
+	font-weight: normal;
+}
 
 h1 {
-	font-family: $bold;
+	@include boldhead();
 	@include rfs(32);
 }
 
 h2 {
-	font-family: $bold;
+	@include boldhead();
 	@include rfs(24);
+}
+
+
+h3 {
+	@include boldhead();
+	margin-top: 1.75em;
+	margin-bottom: 1.25em;
+	@include rfs(20);
+}
+
+h4 {
+	@include boldhead();
+	margin-top: 1.75em;
+	margin-bottom: .75em;
 }
 
 p {
 	color: black;
 	line-height: 1.5em;
+	margin-bottom: 1em;
 }
 
 span {
@@ -194,8 +209,6 @@ span {
 .hbox {
 	@include card;
 	background-image: url('../images/hivequeen.svg');
-	flex-direction: row-reverse;
-	text-align: right;
 	background-size: 40%;
 }
 
@@ -208,6 +221,8 @@ span {
 .abox {
 	@include card;
 	background-image: url('../images/astro.svg');
+	flex-direction: row-reverse;
+	text-align: right;
 }
 
 .qbox {
@@ -266,12 +281,6 @@ span {
 	border-bottom: 0.1em solid $side;
 }
 
-#gap {	
-	@include mq($from: tablet) {
-		height: 6em;
-	}
-}
-
 .nav-wrapper {
     height: 2em;
 	line-height: 2em;
@@ -307,7 +316,7 @@ footer {
 }
 
 @mixin spacing {
-	margin-top: 4em;
+	margin-top: 1em;
 }
 
 .intro, .facts {
@@ -320,6 +329,7 @@ table {
 
 th {
 	font-family: $bold;
+	font-weight: normal;
 	padding: .75em 0em .75em 0em;
 	text-align: left;
 }
@@ -376,11 +386,6 @@ textarea {
 }
 .contact {
 	padding-top: 2em;
-}
-
-.textheader {
-	@include rfs(22);
-	font-family: $bold;
 }
 
 .text {
