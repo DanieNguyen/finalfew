@@ -172,12 +172,11 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 8em;
-  background-size: contain;
+  background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
   background-image: url("../images/garmin.svg");
-  background-size: 40%;
 }
 
 @media (min-width: 56.25em) {
@@ -195,12 +194,11 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 8em;
-  background-size: contain;
+  background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
   background-image: url("../images/hivequeen.svg");
-  background-size: 40%;
 }
 
 @media (min-width: 56.25em) {
@@ -218,12 +216,12 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 8em;
-  background-size: contain;
+  background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
   background-image: url("../images/chat.svg");
-  background-size: 60%;
+  background-size: 10em;
 }
 
 @media (min-width: 56.25em) {
@@ -241,7 +239,7 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 8em;
-  background-size: contain;
+  background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
@@ -268,7 +266,7 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 8em;
-  background-size: contain;
+  background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
@@ -278,6 +276,7 @@ span {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   text-align: right;
+  background-size: 6em;
 }
 
 @media (min-width: 56.25em) {
@@ -295,7 +294,7 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 8em;
-  background-size: contain;
+  background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2.5em;
@@ -479,6 +478,22 @@ textarea {
   margin-top: 1em;
 }
 
+.me {
+  margin-top: 3em;
+  -webkit-box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+          box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 43.75em) and (max-width: 56.24em) {
+  .me {
+    width: 60%;
+  }
+}
+
+.aboutimg {
+  text-align: center;
+}
+
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -515,49 +530,6 @@ img {
   padding: 1em;
   width: 100%;
   min-height: 1px;
-}
-
-@media (min-width: 43.75em) and (max-width: 56.24em) {
-  .wrapper {
-    width: 95%;
-    max-width: 100%;
-  }
-  .col-1 {
-    width: 8.33333%;
-  }
-  .col-2 {
-    width: 16.66667%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33333%;
-  }
-  .col-5 {
-    width: 41.66667%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33333%;
-  }
-  .col-8 {
-    width: 66.66667%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33333%;
-  }
-  .col-11 {
-    width: 91.66667%;
-  }
-  .col-12 {
-    width: 100%;
-  }
 }
 
 @media (min-width: 56.25em) {

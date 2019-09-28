@@ -190,7 +190,7 @@ span {
 	display: flex;
 	align-items: center;
 	height: 8em;
-	background-size: contain;
+	background-size: 8em;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 2.5em;
@@ -203,19 +203,18 @@ span {
 .garbox {
 	@include card;
 	background-image: url('../images/garmin.svg');
-	background-size: 40%;
+
 }
 
 .hbox {
 	@include card;
 	background-image: url('../images/hivequeen.svg');
-	background-size: 40%;
 }
 
 .pbox {
 	@include card;
 	background-image: url('../images/chat.svg');
-	background-size: 60%;
+	background-size: 10em;
 }
 
 .abox {
@@ -230,6 +229,7 @@ span {
 	background-image: url('../images/qfc.svg');
 	flex-direction: row-reverse;
 	text-align: right;
+	background-size: 6em;
 }
 
 .sbox {
@@ -393,4 +393,16 @@ textarea {
 
 .text {
 	@include spacing();
+}
+
+.me {
+	margin-top: 3em;
+	box-shadow: 0em .25em .5em rgba(0, 0, 0, 0.2);
+	@include mq($from: tablet, $until: desktop) {
+		width: 60%;
+	}
+}
+
+.aboutimg {
+	text-align: center;
 }
