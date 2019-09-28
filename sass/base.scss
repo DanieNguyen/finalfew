@@ -273,11 +273,11 @@ span {
 	border-bottom: 0.1em solid $qfc;
 }
 
-.hvr-grow:hover .underline4, .hvr-grow:focus .underline3, .hvr-grow:active .underline3 {
+.hvr-grow:hover .underline4, .hvr-grow:focus .underline4, .hvr-grow:active .underline3 {
 	border-bottom: 0.1em solid $astro;
 }
 
-.hvr-grow:hover .underline5, .hvr-grow:focus .underline3, .hvr-grow:active .underline3 {
+.hvr-grow:hover .underline5, .hvr-grow:focus .underline5, .hvr-grow:active .underline3 {
 	border-bottom: 0.1em solid $side;
 }
 
@@ -323,9 +323,6 @@ footer {
 	@include spacing();
 }
 
-table {
-	margin-right: -1em;
-}
 
 th {
 	font-family: $bold;
@@ -344,9 +341,6 @@ td {
 form {
 	font-family: $bold !important;
 	margin-top: 6em;
-	@include mq($from: desktop) {
-		width: 50%;
-	}
 
 }
 
@@ -360,9 +354,10 @@ input, textarea {
 	font-size: 1em;
 }
 
-textarea {
-	min-width: 100%;
-	max-width: 100%;
+input {
+	@include mq($from: tablet) {
+		width: 35%;
+	}
 }
 
 #submit {
@@ -405,4 +400,8 @@ textarea {
 
 .aboutimg {
 	text-align: center;
+}
+
+hr {
+	color: rgba(0, 0, 0, 0.2);
 }

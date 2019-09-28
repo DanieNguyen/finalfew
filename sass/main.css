@@ -351,11 +351,11 @@ span {
   border-bottom: 0.1em solid #81a565;
 }
 
-.hvr-grow:hover .underline4, .hvr-grow:focus .underline3, .hvr-grow:active .underline3 {
+.hvr-grow:hover .underline4, .hvr-grow:focus .underline4, .hvr-grow:active .underline3 {
   border-bottom: 0.1em solid #9DD19C;
 }
 
-.hvr-grow:hover .underline5, .hvr-grow:focus .underline3, .hvr-grow:active .underline3 {
+.hvr-grow:hover .underline5, .hvr-grow:focus .underline5, .hvr-grow:active .underline3 {
   border-bottom: 0.1em solid #2d82e2;
 }
 
@@ -396,10 +396,6 @@ footer {
   margin-top: 1em;
 }
 
-table {
-  margin-right: -1em;
-}
-
 th {
   font-family: Inter-Bold;
   font-weight: normal;
@@ -420,12 +416,6 @@ form {
   margin-top: 6em;
 }
 
-@media (min-width: 56.25em) {
-  form {
-    width: 50%;
-  }
-}
-
 input, textarea {
   width: 100%;
   border: 1px solid gray;
@@ -436,9 +426,10 @@ input, textarea {
   font-size: 1em;
 }
 
-textarea {
-  min-width: 100%;
-  max-width: 100%;
+@media (min-width: 43.75em) {
+  input {
+    width: 35%;
+  }
 }
 
 #submit {
@@ -494,6 +485,10 @@ textarea {
   text-align: center;
 }
 
+hr {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -535,7 +530,7 @@ img {
 @media (min-width: 56.25em) {
   .wrapper {
     width: 95%;
-    max-width: 55em;
+    max-width: 60em;
   }
   .col-1 {
     width: 8.33333%;

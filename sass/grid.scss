@@ -52,7 +52,7 @@ img {
 @include mq($from:desktop) {
     .wrapper {
         width: 95%;
-        max-width: 55em;
+        max-width: 60em;
     }
     @for $i from 1 through $grid-col {
         .col-#{$i} {
