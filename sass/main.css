@@ -449,7 +449,7 @@ input, textarea {
 
 @media (min-width: 43.75em) {
   #submit {
-    width: 25%;
+    width: 20%;
   }
 }
 
@@ -467,7 +467,7 @@ input, textarea {
 
 @media (min-width: 43.75em) {
   #submit:hover {
-    width: 25%;
+    width: 20%;
   }
 }
 
