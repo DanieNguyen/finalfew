@@ -356,7 +356,7 @@ input, textarea {
 
 input {
 	@include mq($from: tablet) {
-		width: 35%;
+		width: 40%;
 	}
 }
 
@@ -365,21 +365,25 @@ input {
 	-moz-appearance: none;
 	appearance: none;
 	border: 2px solid $color;
-	width: 25%;
 	background-color: transparent;
 	font-family: $bold;
 	@include mq($until: tablet) {
-		width: 50%;
+		width: 40%;
+	}
+	@include mq($from: tablet) {
+		width: 20%;
 	}
 }
 
 #submit:hover {
 	border: 2px solid $color;
-	width: 25%;
 	color: white;
 	background-color: $color;
 	@include mq($until: tablet) {
-		width: 50%;
+		width: 40%;
+	}
+	@include mq($from: tablet) {
+		width: 20%;
 	}
 }
 .contact {

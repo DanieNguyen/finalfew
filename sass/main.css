@@ -428,7 +428,7 @@ input, textarea {
 
 @media (min-width: 43.75em) {
   input {
-    width: 35%;
+    width: 40%;
   }
 }
 
@@ -437,27 +437,37 @@ input, textarea {
   -moz-appearance: none;
   appearance: none;
   border: 2px solid #80DEEA;
-  width: 25%;
   background-color: transparent;
   font-family: Inter-Bold;
 }
 
 @media (max-width: 43.74em) {
   #submit {
-    width: 50%;
+    width: 40%;
+  }
+}
+
+@media (min-width: 43.75em) {
+  #submit {
+    width: 25%;
   }
 }
 
 #submit:hover {
   border: 2px solid #80DEEA;
-  width: 25%;
   color: white;
   background-color: #80DEEA;
 }
 
 @media (max-width: 43.74em) {
   #submit:hover {
-    width: 50%;
+    width: 40%;
+  }
+}
+
+@media (min-width: 43.75em) {
+  #submit:hover {
+    width: 25%;
   }
 }
 
