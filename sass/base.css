@@ -1,3 +1,84 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper, .row {
+  *zoom: 1;
+}
+
+.wrapper:before, .row:before, .wrapper:after, .row:after {
+  content: " ";
+  display: table;
+}
+
+.wrapper:after, .row:after {
+  clear: both;
+}
+
+[class*='col'] {
+  float: left;
+  padding: 1em 1em 1em 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media (min-width: 56.25em) {
+  .wrapper {
+    width: 95%;
+    max-width: 60em;
+  }
+  .col-1 {
+    width: 8.33333%;
+  }
+  .col-2 {
+    width: 16.66667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33333%;
+  }
+  .col-5 {
+    width: 41.66667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33333%;
+  }
+  .col-8 {
+    width: 66.66667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33333%;
+  }
+  .col-11 {
+    width: 91.66667%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
 @font-face {
   font-family: "Inter-Bold";
   src: url("../fonts/Inter-Bold.woff") format("woff");
@@ -17,7 +98,7 @@ html {
 }
 
 .container {
-  padding: 1em 2em 1em 2em;
+  padding: 1em 2em 1em 20em;
 }
 
 @media (min-width: 43.75em) {
@@ -105,28 +186,34 @@ h1 {
 h2 {
   font-family: Inter-Bold;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 @media (max-width: 1200px) {
   h2 {
-    font-size: calc(1.275rem + 0.3vw) ;
+    font-size: calc(1.3rem + 0.6vw) ;
   }
 }
 
 h3 {
   font-family: Inter-Bold;
   font-weight: normal;
-  margin-top: 1.75em;
-  margin-bottom: 1.25em;
-  font-size: 1.25rem;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
 }
 
 h4 {
-  font-family: Inter-Bold;
-  font-weight: normal;
-  margin-top: 4em;
+  font-family: Inter-Light-BETA;
+  margin-top: 3em;
   margin-bottom: 1em;
+  font-size: 1.25rem;
 }
 
 p {
@@ -371,7 +458,7 @@ span {
 
 .nav-wrapper .nav.fixed {
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
   width: 100%;
   height: 4em;
   padding-top: 1em;
@@ -396,6 +483,10 @@ footer {
   margin-top: 1em;
 }
 
+table {
+  margin-left: 3em;
+}
+
 th {
   font-family: Inter-Bold;
   font-weight: normal;
@@ -403,8 +494,9 @@ th {
   text-align: left;
 }
 
-.tableheader {
-  text-decoration: underline;
+.first {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 td {
@@ -500,10 +592,18 @@ hr {
 }
 
 .lightbox {
-  z-index: 20;
+  z-index: 4;
 }
 
 .dam {
   margin-top: 4em;
+}
+
+.gallery {
+  max-height: 20em;
+}
+
+.overview {
+  margin-bottom: 0em;
 }
 /*# sourceMappingURL=base.css.map */

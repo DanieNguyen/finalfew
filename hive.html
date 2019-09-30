@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daniel Nguyen</title>
-    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="sass/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css.map">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -42,18 +44,20 @@
             </div>
         </div>
         <div class="row text">
-            <div class='col-7'>
-                <h3>Overview</h3>
-                <p>For my user-centered design course, I worked in a team of 4 in order to create a user-centered product for urban
-                    beekeepers. Please view a shortened version of
-                    our work and design process below. For the full write-up, please click this <a
-                        href='https://daniespam26.wixsite.com/huxney' target="_blank">link here</a>.</p>
+            <div class="col-12">
+                <h3 class="overview">Overview</h3>
             </div>
-            <div class="col-5 text">
+            <div class='col-7'>
+                <p>For my user-centered design course, I worked in a team of for to design a solution for beekeepers. Our team found that many beekeepers struggle with dedicating time to their multiple beehives efficiently, especially in the winter. So, we designed a monitoring system and companion mobile app. </p>
+                <p>
+                    Please view a shortened version of our work and design process below. For the detailed team write-up, please click this <a href='https://daniespam26.wixsite.com/huxney' target="_blank">link here</a>.
+                </p> 
+            </div>
+            <div class="col-5">
                 <table>
                     <tr>
-                        <th>Role</th>
-                        <td>User Experience Designer</td>
+                        <th class="first">Role</th>
+                        <td class="first">User Experience Designer</td>
                     </tr>
                     <tr>
                         <th>Team</th>
@@ -65,21 +69,68 @@
                     </tr>
                     <tr>
                         <th>Timeline</th>
-                        <td>Three Months</td>
+                        <td>March - June 2018</td>
                     </tr>
                 </table>
             </div>
         </div>
         <div class="row text">
             <div class='col-12'>
-                <h3>Summary</h3>
-                <p>For my user-centered design course, I worked in a team of 4 in order to create a user-centered product for
-                    urban
-                    beekeepers. Please view a shortened version of
-                    our work and design process below. For the full write-up, please click this <a
-                        href='https://daniespam26.wixsite.com/huxney' target="_blank">link here</a>.</p>
+                <h3>Our Design Process</h3>
+                <p>For this project, our team was led through the complete user centered design process taught by our professor, Tyler Fox. We went through the different stages of research, ideating, prototyping, evaluating, and finalizing. </p>
+                <h4>User Research</h4>
+                <p>For this project, our team chose a user group that none of us were familiar with in order to eliminate existing bias. We chose beekeepers randomly and conducted in-depth interviews with four different beekeepers. Using this information, we created two user personas based on the two important types of beekeepers we identified to evaluate the different pain points that beekeepers currently have. We then used those personas to create a user journey map to further empathize with the different emotions that beekeepers feel when interacting with their hive. After four weeks of research, our team started to think of solutions through brainstorming and focusing on our decided design requirements.
+                </p>
             </div>
-
+            <div class="col-4">
+                    <a href="images/brainstorm.jpeg" class="lightbox">
+                        <img class="gallery" src="images/brainstorm.jpeg" alt="brainstorming session after interviews">
+                    </a>
+                </div>
+            <div class="col-3">
+                <a href="images/roughpersona.jpeg" class="lightbox">
+                    <img class="gallery" src="images/roughpersona.jpeg" alt="a rough persona of our beekeeper">
+                </a>
+            </div>
+            <div class="col-5">
+                <a href="images/journeymap.png" class="lightbox">
+                    <img class="gallery" src="images/journeymap.png" alt="a user journey map of our beekeeper">
+                    </a>               
+            </div>
+            <div class="col-12">
+                <h4>Design Requirements</h4>
+                <p>Using the information from our research, we came up with a list of design requirements that we wanted to address with our solution. Using these design requirements, each team member created two storyboards with different solutions for our design requirements. We discussed these solutions as a team and decided which one we would use. Our chosen solution was a physical hive monitoring system connected to a mobile application for beekeepers to use. This combination would allow beekeepers to easily overcome their pain points of not being able to check on their beehives dueto location or weather. 
+                </p>
+                <p>After choosing a solution, our team focused on the information architecture of the application and hive monitoring system before designing prototypes. We wanted to make sure users can easily access information and that the hierarchy of the information made sense. Using this information architecture map, our team created paper prototypes and Figma to draw our mobile application and hive system.</p>
+                <h4>Prototyping</h4>
+                <p>For the next week, we focused on creating prototypes and wireframes. We focused on creating low fidelity prototypes, using pencil and paper for both the mobile application and hive monitoring system. These prototypes were meant for us to conduct usability testing with.</p>
+            </div>
+            <div class="col-9">
+                    <a href="images/paperpro.png" class="lightbox">
+                        <img class="gallery" src="images/paperpro.png" alt="paper prototype of mobile app">
+                    </a>
+                </div>
+            <div class="col-3">
+                <a href="images/physproto.png" class="lightbox">
+                    <img class="gallery" src="images/physproto.png" alt="paper prototype of physical system">
+                </a>
+            </div>
+            <div class="col-12">
+                  <h4>Usability Testing</h4>
+                <p>Then after creating our prototypes, we had to conduct user testing in order to make sure our product was actually working how we intended it to for the users. Although we could not schedule testing with beekeepers themselves, we managed to test with a variety of college students. Our team had testers conduct three different tasks while thinking out loud that each had a variety of steps to complete. We took notes and we found out through first impressions and task walk-throughs that our mobile application could be made more efficient and simpler. Our team realized we were trying to add too many features that took away from the purpose of the hive system. Thanks to the user testing, we revised our designs and then created high fidelity mock-ups.</p>
+                <h4>High Fidelity Mock-ups</h4>
+                <p>Our high fidelity mock-ups for the mobile application were made in Figma, with 22 different screens, and the physical hive monitoring system was designed in Solidworks and 3D printed. These mock-ups took a week to design. The last part of the project was presenting it to various companies in order to see if it was something that they would sponsor. We created a presentation detailing our design process and ended with a 100% rate of support for our project.</p>
+            </div>
+            <div class="col-6">
+                    <a href="images/hive.png" class="lightbox">
+                        <img class="gallery" src="images/hive.png" alt="high fidelity of mobile app">
+                    </a>
+                </div>
+            <div class="col-6">
+                <a href="images/physical.png" class="lightbox">
+                    <img class="gallery" src="images/physical.png" alt="high fidelity of physical system">
+                </a>
+            </div>
         </div>
         <div class="row text">
             <div class="col-12">
@@ -98,6 +149,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
     <script src="main.js"></script>
 </body>
 
