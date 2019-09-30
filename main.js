@@ -27,7 +27,7 @@ $(document).ready(function () {
 		}
 	} else {
 		$('a').fluidbox({
-			viewportFill: 0.85,
+			viewportFill: 0.9,
 			loader: true
 		})
 		if (scrollPos >= navPos - 16) {
