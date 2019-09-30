@@ -16,12 +16,20 @@ $(document).ready(function () {
 
 	// check if scroll position is >= the nav position
 	if (this.innerWidth >= 700) {
+		$('a').fluidbox({
+			viewportFill: 0.7,
+			loader: true
+		})
 		if (scrollPos >= navPos - 16) {
 			$navBar.addClass('fixed');
 		} else {
 			$navBar.removeClass('fixed');
 		}
 	} else {
+		$('a').fluidbox({
+			viewportFill: 0.85,
+			loader: true
+		})
 		if (scrollPos >= navPos - 16) {
 			$navBar.addClass('fixed');
 		} else {
@@ -48,11 +56,6 @@ $(document).ready(function () {
 	$(function () {
 		$('a[class="lightbox"]').fluidbox();
 	})
-	
 
-	$('a').fluidbox({
-		viewportFill: 0.70,
-		loader: true
-	})
 
 });
