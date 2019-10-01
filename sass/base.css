@@ -254,9 +254,16 @@ h3 {
 
 h4 {
   font-family: Inter-Light-BETA;
+  font-weight: normal;
   margin-top: 3em;
   margin-bottom: 1em;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
+}
+
+@media (max-width: 1200px) {
+  h4 {
+    font-size: calc(1.2625rem + 0.15vw) ;
+  }
 }
 
 p {
@@ -647,5 +654,18 @@ hr {
 
 .overview {
   margin-bottom: 0em;
+}
+
+.pagination {
+  color: black;
+}
+
+.next {
+  padding-left: 2em;
+}
+
+.pagination:hover {
+  color: #80DEEA;
+  font-family: Inter-Bold;
 }
 /*# sourceMappingURL=base.css.map */

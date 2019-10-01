@@ -148,9 +148,10 @@ h3 {
 
 h4 {
 	font-family: $light;
+	font-weight: normal;
 	margin-top: 3em;
 	margin-bottom: 1em;
-	@include rfs(20);
+	@include rfs(22);
 }
 
 p {
@@ -430,4 +431,17 @@ hr {
 
 .overview {
 	margin-bottom: 0em;
+}
+
+.pagination {
+	color: black;
+}
+
+.next {
+	padding-left: 2em;
+}
+
+.pagination:hover {
+	color: $color;
+	font-family: $bold;
 }
