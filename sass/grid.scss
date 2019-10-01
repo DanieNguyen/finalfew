@@ -49,6 +49,18 @@ img {
     min-height: 1px;
 }
 
+@include mq($from:tablet, $until: desktop) {
+    .wrapper {
+        width: 95%;
+        max-width: 100%;
+    }
+    @for $i from 1 through $grid-col {
+        .col-#{$i} {
+            width: 100% / $grid-col * $i;
+        }
+    }
+}
+
 @include mq($from:desktop) {
     .wrapper {
         width: 95%;
