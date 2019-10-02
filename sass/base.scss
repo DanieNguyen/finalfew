@@ -64,7 +64,7 @@ $astro: #9DD19C;
 $side: rgb(45, 130, 226);
 
 html {
-    overflow-y: scroll;
+	overflow-y: scroll;
 }
 * {
 	font-family: $light;
@@ -75,17 +75,6 @@ html {
 	@include mq($from: tablet) {
 		padding: 1em 3em 1em 3em;
 	}
-}
-
-.header {
-	padding: 1em 0em 1em 0em;
-	@include mq($from: desktop) {
-		padding: 2em 0em 1em 0em;
-	}
-}
-
-.subheader {
-	@include rfs(24);
 }
 
 #profile {
@@ -113,6 +102,10 @@ html {
 	@include mq($from:tablet) {
 		margin-right: 2em;
 	}
+
+	@include mq($from:desktop) {
+		@include rfs(18);
+	}
 }
 
 .navlink:hover, .navactive {
@@ -128,14 +121,43 @@ a {
 	font-weight: normal;
 }
 
+.header {
+	padding: 1em 0em 1em 0em;
+	@include mq($from: desktop) {
+		padding: 2em 0em 1em 0em;
+	}
+}
+
+.title {
+	padding-top: 2em;
+}
+
+.gap {
+	margin-top: 4em;
+}
+
+.subheader {
+	@include rfs(24);
+	@include mq($from: desktop) {
+		@include rfs(28); 
+	}
+}
+
+
 h1 {
 	@include boldhead();
-	@include rfs(32); 
+	@include rfs(36);
+	@include mq($from: desktop) {
+		@include rfs(42); 
+	}
 }
 
 h2 {
 	@include boldhead();
-	@include rfs(28);
+	@include rfs(26);
+	@include mq($from: desktop) {
+		@include rfs(32); 
+	}
 }
 
 
@@ -143,7 +165,10 @@ h3 {
 	@include boldhead();
 	margin-top: 3em;
 	margin-bottom: 1.5em;
-	@include rfs(24);
+	@include rfs(20);
+	@include mq($from: desktop) {
+		@include rfs(24); 
+	}
 }
 
 h4 {
@@ -151,7 +176,10 @@ h4 {
 	font-weight: normal;
 	margin-top: 3em;
 	margin-bottom: 1em;
-	@include rfs(22);
+	@include rfs(20);
+	@include mq($from: desktop) {
+		@include rfs(22); 
+	}
 }
 
 p {
@@ -193,14 +221,15 @@ span {
 @mixin card {
 	display: flex;
 	align-items: center;
-	height: 8em;
-	background-size: 8em;
+	height: 10em;
+	background-size: 9em;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 2.5em;
 	@include mq($from: desktop) {
-		height: 10em;
-		@include rfs(18);
+		background-size: 10em;
+		height: 16em;
+		@include rfs(22);
 	}
 }
 
@@ -219,6 +248,9 @@ span {
 	@include card;
 	background-image: url('../images/chat.svg');
 	background-size: 10em;
+	@include mq($from: desktop) {
+		background-size: 12em;
+	}
 }
 
 .abox {
@@ -234,7 +266,10 @@ span {
 	flex-direction: row-reverse;
 	text-align: right;
 	background-size: 6em;
-}
+	@include mq($from: desktop) {
+		background-size: 8em;
+	}
+} 
 
 .sbox {
 	@include card;
@@ -435,6 +470,7 @@ hr {
 
 .pagination {
 	color: black;
+	margin-bottom: 4em;
 }
 
 .next {
@@ -444,4 +480,16 @@ hr {
 .pagination:hover {
 	color: $color;
 	font-family: $bold;
+}
+
+ul, ol {
+	margin: 2em 6em 2em 6em;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+ul li, ol li {
+	padding-bottom: 1em;
 }
