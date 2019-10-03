@@ -766,11 +766,13 @@ span {
 .nav-wrapper .nav.fixed {
   position: fixed;
   z-index: 1000;
-  width: 100%;
+  width: 200%;
   height: 4em;
   padding-top: 1em;
   top: 0;
   background: white;
+  padding-left: 11em;
+  margin-left: -11em;
 }
 
 footer {
