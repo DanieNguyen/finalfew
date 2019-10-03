@@ -186,7 +186,7 @@ html {
   margin-top: 8em;
 }
 
-@media (min-width: 56.25em) {
+@media (min-width: 81.25em) {
   .heading {
     margin-top: 6em;
   }
@@ -196,7 +196,7 @@ html {
   margin-bottom: 8em;
 }
 
-@media (min-width: 56.25em) {
+@media (min-width: 81.25em) {
   .subheading {
     margin-bottom: 5em;
   }
@@ -207,27 +207,16 @@ html {
   padding-top: 4em;
 }
 
-@media (min-width: 56.25em) {
+@media (min-width: 81.25em) {
   #portfolio {
     margin-top: 14em;
     padding-top: 5em;
   }
 }
 
-#profile {
-  display: none;
-}
-
-@media (min-width: 56.25em) {
-  #profile {
-    float: right;
-    margin-bottom: -1.5em;
-    display: block;
-  }
-}
-
 .navlink {
-  font-family: Inter-Bold !important;
+  font-family: Inter-Bold;
+  font-weight: normal;
   color: black;
   margin-right: 0.8em;
 }
@@ -868,8 +857,8 @@ hr {
   font-family: Inter-Bold;
 }
 
-.landingpic {
-  border: 12px solid black;
+.landing {
+  text-align: center;
 }
 
 ul, ol {
