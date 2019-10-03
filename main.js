@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 	// check if scroll position is >= the nav position
 	if (this.innerWidth >= 700) {
-		if (scrollPos >= navPos - 16) {
+		if (scrollPos >= navPos + 16) {
 			$navBar.addClass('fixed');
 		} else {
 			$navBar.removeClass('fixed');

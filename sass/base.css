@@ -134,6 +134,7 @@ img {
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -167,6 +168,49 @@ html {
 @media (max-width: 1200px) {
   .subheader {
     font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+.heading, .subheading {
+  font-size: 3rem;
+  line-height: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  .heading, .subheading {
+    font-size: calc(1.425rem + 2.1vw) ;
+  }
+}
+
+.heading {
+  margin-top: 8em;
+}
+
+@media (min-width: 56.25em) {
+  .heading {
+    margin-top: 6em;
+  }
+}
+
+.subheading {
+  margin-bottom: 8em;
+}
+
+@media (min-width: 56.25em) {
+  .subheading {
+    margin-bottom: 6em;
+  }
+}
+
+#portfolio {
+  margin-top: 4em;
+  padding-top: 4em;
+}
+
+@media (min-width: 56.25em) {
+  #portfolio {
+    margin-top: 14em;
+    padding-top: 5em;
   }
 }
 
@@ -312,14 +356,21 @@ span {
   background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   background-image: url("../images/garmin.svg");
 }
 
 @media (min-width: 56.25em) {
   .garbox {
     height: 10em;
-    font-size: 1.125rem;
+    background-size: 8em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  .garbox {
+    font-size: calc(1.275rem + 0.3vw) ;
   }
 }
 
@@ -334,14 +385,21 @@ span {
   background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   background-image: url("../images/hivequeen.svg");
 }
 
 @media (min-width: 56.25em) {
   .hbox {
     height: 10em;
-    font-size: 1.125rem;
+    background-size: 8em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  .hbox {
+    font-size: calc(1.275rem + 0.3vw) ;
   }
 }
 
@@ -356,15 +414,28 @@ span {
   background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2.5em;
-  background-image: url("../images/chat.svg");
+  margin-bottom: 2em;
   background-size: 10em;
+  background-image: url("../images/chat.svg");
 }
 
 @media (min-width: 56.25em) {
   .pbox {
     height: 10em;
-    font-size: 1.125rem;
+    background-size: 8em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  .pbox {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .pbox {
+    background-size: 10em;
   }
 }
 
@@ -379,7 +450,7 @@ span {
   background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   background-image: url("../images/astro.svg");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -391,7 +462,14 @@ span {
 @media (min-width: 56.25em) {
   .abox {
     height: 10em;
-    font-size: 1.125rem;
+    background-size: 8em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  .abox {
+    font-size: calc(1.275rem + 0.3vw) ;
   }
 }
 
@@ -406,7 +484,7 @@ span {
   background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   background-image: url("../images/qfc.svg");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -419,7 +497,20 @@ span {
 @media (min-width: 56.25em) {
   .qbox {
     height: 10em;
-    font-size: 1.125rem;
+    background-size: 8em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  .qbox {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .qbox {
+    background-size: 6em;
   }
 }
 
@@ -434,7 +525,7 @@ span {
   background-size: 8em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   background-image: url("../images/side.png");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -446,7 +537,14 @@ span {
 @media (min-width: 56.25em) {
   .sbox {
     height: 10em;
-    font-size: 1.125rem;
+    background-size: 8em;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  .sbox {
+    font-size: calc(1.275rem + 0.3vw) ;
   }
 }
 
@@ -506,6 +604,12 @@ span {
   line-height: 2em;
 }
 
+@media (min-width: 56.25em) {
+  .nav-wrapper .nav {
+    padding-top: 2em;
+  }
+}
+
 .nav-wrapper .nav.fixed {
   position: fixed;
   z-index: 1000;
@@ -531,6 +635,12 @@ footer {
 
 .intro, .facts {
   margin-top: 1em;
+}
+
+@media (min-width: 56.25em) {
+  .intro, .facts {
+    margin-top: 8em;
+  }
 }
 
 @media (min-width: 56.25em) {
@@ -623,6 +733,12 @@ input, textarea {
   margin-top: 1em;
 }
 
+@media (min-width: 56.25em) {
+  .text {
+    margin-top: 8em;
+  }
+}
+
 .me {
   -webkit-box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
           box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
@@ -667,5 +783,9 @@ hr {
 .pagination:hover {
   color: #80DEEA;
   font-family: Inter-Bold;
+}
+
+.landingpic {
+  border: 12px solid black;
 }
 /*# sourceMappingURL=base.css.map */
