@@ -151,7 +151,6 @@ html {
   }
 }
 
-<<<<<<< HEAD
 .header {
   padding: 1em 0em 1em 0em;
 }
@@ -199,7 +198,7 @@ html {
 
 @media (min-width: 56.25em) {
   .subheading {
-    margin-bottom: 6em;
+    margin-bottom: 5em;
   }
 }
 
@@ -215,8 +214,6 @@ html {
   }
 }
 
-=======
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
 #profile {
   display: none;
 }
@@ -230,7 +227,8 @@ html {
 }
 
 .navlink {
-  font-family: Inter-Bold !important;
+  font-family: Inter-Bold;
+  font-weight: normal;
   color: black;
   margin-right: 0.8em;
 }
@@ -447,25 +445,15 @@ span {
 
 @media (min-width: 56.25em) {
   .garbox {
-<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
-=======
-    background-size: 10em;
-    height: 16em;
-    font-size: 1.375rem;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .garbox {
-<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
-=======
-    font-size: calc(1.2625rem + 0.15vw) ;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -486,25 +474,15 @@ span {
 
 @media (min-width: 56.25em) {
   .hbox {
-<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
-=======
-    background-size: 10em;
-    height: 16em;
-    font-size: 1.375rem;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .hbox {
-<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
-=======
-    font-size: calc(1.2625rem + 0.15vw) ;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -526,35 +504,21 @@ span {
 
 @media (min-width: 56.25em) {
   .pbox {
-<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
-=======
-    background-size: 10em;
-    height: 16em;
-    font-size: 1.375rem;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .pbox {
-<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
-=======
-    font-size: calc(1.2625rem + 0.15vw) ;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) {
   .pbox {
-<<<<<<< HEAD
     background-size: 10em;
-=======
-    background-size: 14em;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -580,25 +544,15 @@ span {
 
 @media (min-width: 56.25em) {
   .abox {
-<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
-=======
-    background-size: 10em;
-    height: 16em;
-    font-size: 1.375rem;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .abox {
-<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
-=======
-    font-size: calc(1.2625rem + 0.15vw) ;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -625,35 +579,21 @@ span {
 
 @media (min-width: 56.25em) {
   .qbox {
-<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
-=======
-    background-size: 10em;
-    height: 16em;
-    font-size: 1.375rem;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .qbox {
-<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
-=======
-    font-size: calc(1.2625rem + 0.15vw) ;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) {
   .qbox {
-<<<<<<< HEAD
     background-size: 6em;
-=======
-    background-size: 8em;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -679,25 +619,15 @@ span {
 
 @media (min-width: 56.25em) {
   .sbox {
-<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
-=======
-    background-size: 10em;
-    height: 16em;
-    font-size: 1.375rem;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .sbox {
-<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
-=======
-    font-size: calc(1.2625rem + 0.15vw) ;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -939,10 +869,10 @@ hr {
   font-family: Inter-Bold;
 }
 
-<<<<<<< HEAD
-.landingpic {
-  border: 12px solid black;
-=======
+.landing {
+  text-align: center;
+}
+
 ul, ol {
   margin: 2em 6em 2em 6em;
 }
@@ -953,6 +883,5 @@ ul {
 
 ul li, ol li {
   padding-bottom: 1em;
->>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
 }
 /*# sourceMappingURL=base.css.map */
