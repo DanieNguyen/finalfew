@@ -151,6 +151,7 @@ html {
   }
 }
 
+<<<<<<< HEAD
 .header {
   padding: 1em 0em 1em 0em;
 }
@@ -214,6 +215,8 @@ html {
   }
 }
 
+=======
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
 #profile {
   display: none;
 }
@@ -250,6 +253,12 @@ html {
   }
 }
 
+@media (min-width: 56.25em) {
+  .navlink {
+    font-size: 1.125rem;
+  }
+}
+
 .navlink:hover, .navactive {
   color: #80DEEA;
 }
@@ -258,27 +267,91 @@ a {
   text-decoration: none;
 }
 
+.header {
+  padding: 1em 0em 1em 0em;
+}
+
+@media (min-width: 56.25em) {
+  .header {
+    padding: 2em 0em 1em 0em;
+  }
+}
+
+.title {
+  padding-top: 2em;
+}
+
+.gap {
+  margin-top: 4em;
+}
+
+.subheader {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .subheader {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .subheader {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  .subheader {
+    font-size: calc(1.3rem + 0.6vw) ;
+  }
+}
+
 h1 {
   font-family: Inter-Bold;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 @media (max-width: 1200px) {
   h1 {
-    font-size: calc(1.325rem + 0.9vw) ;
+    font-size: calc(1.35rem + 1.2vw) ;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 2.625rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  h1 {
+    font-size: calc(1.3875rem + 1.65vw) ;
   }
 }
 
 h2 {
   font-family: Inter-Bold;
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 1.625rem;
 }
 
 @media (max-width: 1200px) {
   h2 {
-    font-size: calc(1.3rem + 0.6vw) ;
+    font-size: calc(1.2875rem + 0.45vw) ;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
+  h2 {
+    font-size: calc(1.325rem + 0.9vw) ;
   }
 }
 
@@ -287,10 +360,16 @@ h3 {
   font-weight: normal;
   margin-top: 3em;
   margin-bottom: 1.5em;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
   h3 {
     font-size: calc(1.275rem + 0.3vw) ;
   }
@@ -301,10 +380,16 @@ h4 {
   font-weight: normal;
   margin-top: 3em;
   margin-bottom: 1em;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 56.25em) {
+  h4 {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 56.25em) and (max-width: 1200px) {
   h4 {
     font-size: calc(1.2625rem + 0.15vw) ;
   }
@@ -352,8 +437,8 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8em;
-  background-size: 8em;
+  height: 10em;
+  background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2em;
@@ -362,15 +447,25 @@ span {
 
 @media (min-width: 56.25em) {
   .garbox {
+<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
+=======
+    background-size: 10em;
+    height: 16em;
+    font-size: 1.375rem;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .garbox {
+<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
+=======
+    font-size: calc(1.2625rem + 0.15vw) ;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -381,8 +476,8 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8em;
-  background-size: 8em;
+  height: 10em;
+  background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2em;
@@ -391,15 +486,25 @@ span {
 
 @media (min-width: 56.25em) {
   .hbox {
+<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
+=======
+    background-size: 10em;
+    height: 16em;
+    font-size: 1.375rem;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .hbox {
+<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
+=======
+    font-size: calc(1.2625rem + 0.15vw) ;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -410,8 +515,8 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8em;
-  background-size: 8em;
+  height: 10em;
+  background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2em;
@@ -421,21 +526,35 @@ span {
 
 @media (min-width: 56.25em) {
   .pbox {
+<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
+=======
+    background-size: 10em;
+    height: 16em;
+    font-size: 1.375rem;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .pbox {
+<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
+=======
+    font-size: calc(1.2625rem + 0.15vw) ;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) {
   .pbox {
+<<<<<<< HEAD
     background-size: 10em;
+=======
+    background-size: 14em;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -446,8 +565,8 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8em;
-  background-size: 8em;
+  height: 10em;
+  background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2em;
@@ -461,15 +580,25 @@ span {
 
 @media (min-width: 56.25em) {
   .abox {
+<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
+=======
+    background-size: 10em;
+    height: 16em;
+    font-size: 1.375rem;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .abox {
+<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
+=======
+    font-size: calc(1.2625rem + 0.15vw) ;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -480,8 +609,8 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8em;
-  background-size: 8em;
+  height: 10em;
+  background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2em;
@@ -496,21 +625,35 @@ span {
 
 @media (min-width: 56.25em) {
   .qbox {
+<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
+=======
+    background-size: 10em;
+    height: 16em;
+    font-size: 1.375rem;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .qbox {
+<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
+=======
+    font-size: calc(1.2625rem + 0.15vw) ;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) {
   .qbox {
+<<<<<<< HEAD
     background-size: 6em;
+=======
+    background-size: 8em;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -521,8 +664,8 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8em;
-  background-size: 8em;
+  height: 10em;
+  background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 2em;
@@ -536,15 +679,25 @@ span {
 
 @media (min-width: 56.25em) {
   .sbox {
+<<<<<<< HEAD
     height: 10em;
     background-size: 8em;
     font-size: 1.5rem;
+=======
+    background-size: 10em;
+    height: 16em;
+    font-size: 1.375rem;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
 @media (min-width: 56.25em) and (max-width: 1200px) {
   .sbox {
+<<<<<<< HEAD
     font-size: calc(1.275rem + 0.3vw) ;
+=======
+    font-size: calc(1.2625rem + 0.15vw) ;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
   }
 }
 
@@ -774,6 +927,7 @@ hr {
 
 .pagination {
   color: black;
+  margin-bottom: 4em;
 }
 
 .next {
@@ -785,7 +939,20 @@ hr {
   font-family: Inter-Bold;
 }
 
+<<<<<<< HEAD
 .landingpic {
   border: 12px solid black;
+=======
+ul, ol {
+  margin: 2em 6em 2em 6em;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul li, ol li {
+  padding-bottom: 1em;
+>>>>>>> 8a7d7ecbab5d077a3f6053f6b7928469198d833b
 }
 /*# sourceMappingURL=base.css.map */
