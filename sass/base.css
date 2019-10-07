@@ -162,7 +162,14 @@ html {
 }
 
 .heading, .subheading {
+  font-size: 2rem;
   line-height: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  .heading, .subheading {
+    font-size: calc(1.325rem + 0.9vw) ;
+  }
 }
 
 @media (min-width: 56.25em) and (max-width: 99.99em) {
@@ -237,7 +244,7 @@ html {
   font-family: Inter-Bold;
   font-weight: normal;
   color: black;
-  margin-right: 0.8em;
+  margin-right: 2em;
 }
 
 @media (min-width: 21.25em) and (max-width: 24.99em) {
@@ -916,6 +923,7 @@ input, textarea {
 .me {
   -webkit-box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
           box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+  max-width: 400px;
 }
 
 hr {
@@ -972,7 +980,13 @@ hr {
 }
 
 ul, ol {
-  margin: 2em 6em 2em 6em;
+  margin: 2em 2em 2em 2em;
+}
+
+@media (min-width: 56.25em) {
+  ul, ol {
+    margin: 2em 6em 2em 6em;
+  }
 }
 
 ul {

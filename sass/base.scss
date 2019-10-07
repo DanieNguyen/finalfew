@@ -86,6 +86,7 @@ html {
 }
 
 .heading, .subheading {
+	@include rfs(32);
 	@include mq($from: desktop, $until: wide) {
 		@include rfs(36);
 	}
@@ -133,11 +134,10 @@ html {
 .navlink {
 	@include boldhead();
 	color: black;
-	margin-right: 0.8em;
+	margin-right: 2em;
 	@include mq($from: mobile-sm, $until: mobile) {
 		@include rfs(14);
 	}
-
 	@include mq($from:large) {
 		margin-right: 1.2em;
 	}
@@ -506,6 +506,7 @@ input {
 
 .me {
 	box-shadow: 0em .25em .5em rgba(0, 0, 0, 0.2);
+	max-width: 400px;
 }
 
 hr {
@@ -556,7 +557,10 @@ hr {
 }
 
 ul, ol {
-	margin: 2em 6em 2em 6em;
+	margin: 2em 2em 2em 2em;
+	@include mq($from: desktop) {
+		margin: 2em 6em 2em 6em;
+	}
 }
 
 ul {
