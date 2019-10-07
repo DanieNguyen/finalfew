@@ -101,7 +101,7 @@ html {
 		margin-top: 3em;
 	}
 	@include mq($from: wide) {
-		margin-top: 6em;
+		margin-top: 7em;
 	}
 }
 
@@ -111,7 +111,7 @@ html {
 		margin-bottom: 2em;
 	}
 	@include mq($from: wide) {
-		margin-bottom: 5em;
+		margin-bottom: 6em;
 	}
 
 }
@@ -241,6 +241,15 @@ span {
 	@include boldhead();
 }
 
+.links {
+	color: $color;
+	@include boldhead();
+	text-decoration: none;
+}
+
+.links:hover {
+	border-bottom: 1px solid $color;
+}
 .garmin {
 	color: $garmin;
 }
@@ -520,6 +529,9 @@ hr {
 	@include mq($from: tablet, $until: desktop) {
 		height: 14em !important;
 	}
+	@include mq($from: desktop, $until: wide) {
+		height: 14em !important;
+	}
 	@include mq($from: wide) {
 		height: 18em !important;
 	}
@@ -531,6 +543,7 @@ hr {
 
 .pagination {
 	color: black;
+	font-family: $light;
 	margin-bottom: 4em;
 }
 
@@ -557,4 +570,12 @@ ul {
 
 ul li, ol li {
 	padding-bottom: 1em;
+}
+
+.center {
+	text-align: center;
+}
+
+footer {
+	text-align: right;
 }

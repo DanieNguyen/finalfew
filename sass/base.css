@@ -201,7 +201,7 @@ html {
 
 @media (min-width: 100em) {
   .heading {
-    margin-top: 6em;
+    margin-top: 7em;
   }
 }
 
@@ -217,7 +217,7 @@ html {
 
 @media (min-width: 100em) {
   .subheading {
-    margin-bottom: 5em;
+    margin-bottom: 6em;
   }
 }
 
@@ -436,6 +436,17 @@ span {
   color: #80DEEA;
   font-family: Inter-Bold;
   font-weight: normal;
+}
+
+.links {
+  color: #80DEEA;
+  font-family: Inter-Bold;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.links:hover {
+  border-bottom: 1px solid #80DEEA;
 }
 
 .garmin {
@@ -929,6 +940,12 @@ hr {
   }
 }
 
+@media (min-width: 56.25em) and (max-width: 99.99em) {
+  .gallery {
+    height: 14em !important;
+  }
+}
+
 @media (min-width: 100em) {
   .gallery {
     height: 18em !important;
@@ -941,6 +958,7 @@ hr {
 
 .pagination {
   color: black;
+  font-family: Inter-Light-BETA;
   margin-bottom: 4em;
 }
 
@@ -967,5 +985,13 @@ ul {
 
 ul li, ol li {
   padding-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  text-align: right;
 }
 /*# sourceMappingURL=base.css.map */

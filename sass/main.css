@@ -201,7 +201,7 @@ html {
 
 @media (min-width: 100em) {
   .heading {
-    margin-top: 6em;
+    margin-top: 7em;
   }
 }
 
@@ -217,7 +217,7 @@ html {
 
 @media (min-width: 100em) {
   .subheading {
-    margin-bottom: 5em;
+    margin-bottom: 6em;
   }
 }
 
@@ -436,6 +436,11 @@ span {
   color: #80DEEA;
   font-family: Inter-Bold;
   font-weight: normal;
+}
+
+a {
+  color: #80DEEA;
+  text-decoration: none;
 }
 
 .garmin {
@@ -752,10 +757,6 @@ span {
   line-height: 2em;
 }
 
-.navbar {
-  border: 1px solid black;
-}
-
 .nav-wrapper .nav {
   height: 2em;
   line-height: 2em;
@@ -770,11 +771,13 @@ span {
 .nav-wrapper .nav.fixed {
   position: fixed;
   z-index: 1000;
-  width: 100%;
+  width: 200%;
   height: 4em;
   padding-top: 1em;
   top: 0;
   background: white;
+  padding-left: 11em;
+  margin-left: -11em;
 }
 
 footer {
