@@ -97,7 +97,7 @@ html {
 }
 
 .heading {
-	margin-top: 8em;
+	margin-top: 5em;
 	@include mq($from: desktop, $until: wide) {
 		margin-top: 3em;
 	}
@@ -107,7 +107,7 @@ html {
 }
 
 .subheading {
-	margin-bottom: 8em;
+	margin-bottom: 5em;
 	@include mq($from: desktop, $until: wide) {
 		margin-bottom: 2em;
 	}
@@ -157,14 +157,6 @@ html {
 
 a {
 	text-decoration: none;
-}
-
-
-.header {
-	padding: 1em 0em 1em 0em;
-	@include mq($from: desktop) {
-		padding: 2em 0em 1em 0em;
-	}
 }
 
 .title {

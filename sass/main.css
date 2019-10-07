@@ -279,16 +279,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  padding: 1em 0em 1em 0em;
-}
-
-@media (min-width: 56.25em) {
-  .header {
-    padding: 2em 0em 1em 0em;
-  }
-}
-
 .title {
   padding-top: 2em;
 }
