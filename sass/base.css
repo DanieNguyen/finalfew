@@ -786,10 +786,6 @@ span {
   margin-left: -11em;
 }
 
-footer {
-  font-size: 0.875rem;
-}
-
 #call {
   color: black;
   border-bottom: 1px solid #80DEEA;
@@ -991,7 +987,14 @@ ul li, ol li {
   text-align: center;
 }
 
-footer {
-  text-align: right;
+.footer {
+  margin-top: -2em;
+}
+
+@media (min-width: 43.75em) {
+  .footer {
+    text-align: right;
+    margin-top: 0em;
+  }
 }
 /*# sourceMappingURL=base.css.map */

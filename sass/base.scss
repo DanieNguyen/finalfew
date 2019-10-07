@@ -404,11 +404,6 @@ span {
 	margin-left: -11em;
 }
 
-footer {
-	@include rfs(14);
-		
-}
-
 #call {
 	color: black;
 	border-bottom: 1px solid $color;
@@ -576,6 +571,10 @@ ul li, ol li {
 	text-align: center;
 }
 
-footer {
-	text-align: right;
+.footer {
+	@include mq($from: tablet) {
+		text-align: right;
+		margin-top: 0em;
+	}
+	margin-top: -2em;
 }
