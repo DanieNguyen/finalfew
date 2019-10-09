@@ -213,6 +213,7 @@ html {
 }
 
 .subheading {
+  font-family: Inter-Light-BETA;
   margin-bottom: 5em;
 }
 
@@ -942,7 +943,7 @@ hr {
 
 @media (min-width: 100em) {
   .gallery {
-    height: 18em !important;
+    height: 16em !important;
   }
 }
 

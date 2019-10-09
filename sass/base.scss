@@ -107,6 +107,7 @@ html {
 }
 
 .subheading {
+	font-family: $light;
 	margin-bottom: 5em;
 	@include mq($from: desktop, $until: wide) {
 		margin-bottom: 2em;
@@ -521,7 +522,7 @@ hr {
 		height: 14em !important;
 	}
 	@include mq($from: wide) {
-		height: 18em !important;
+		height: 16em !important;
 	}
 }
 
