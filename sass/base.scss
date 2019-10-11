@@ -502,6 +502,10 @@ input {
 	max-width: 400px;
 }
 
+.shadow {
+	box-shadow: .25em .25em .7em rgba(0, 0, 0, 0.1);
+}
+
 hr {
 	color: rgba(0, 0, 0, 0.2);
 }

@@ -917,6 +917,11 @@ input, textarea {
   max-width: 400px;
 }
 
+.shadow {
+  -webkit-box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+          box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+}
+
 hr {
   color: rgba(0, 0, 0, 0.2);
 }
@@ -943,7 +948,7 @@ hr {
 
 @media (min-width: 100em) {
   .gallery {
-    height: 18em !important;
+    height: 16em !important;
   }
 }
 

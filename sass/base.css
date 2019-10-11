@@ -917,6 +917,11 @@ input, textarea {
   max-width: 400px;
 }
 
+.shadow {
+  -webkit-box-shadow: 0.25em 0.25em 0.7em rgba(0, 0, 0, 0.1);
+          box-shadow: 0.25em 0.25em 0.7em rgba(0, 0, 0, 0.1);
+}
+
 hr {
   color: rgba(0, 0, 0, 0.2);
 }
