@@ -579,7 +579,9 @@ input {
 
 .me {
 	box-shadow: 0em .25em .5em rgba(0, 0, 0, 0.2);
-	max-width: 400px;
+	@include mq($from: tablet) {
+		max-width: 400px;
+	}
 }
 
 .shadow {
@@ -646,10 +648,6 @@ ul {
 
 ul li, ol li {
 	padding-bottom: 1em;
-}
-
-.center {
-	text-align: center;
 }
 
 .footer {

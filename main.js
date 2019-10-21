@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
 	var img = $('.landingpic').attr('src');
-	console.log(img);
 	var mq = window.matchMedia("(min-width:700px)")
 	if (mq.matches) {
 		var newImg = img + ".jpg";
