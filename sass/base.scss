@@ -48,11 +48,13 @@
 	}
 }
 
-@include font-face(Inter-Bold, "../fonts/Inter-Bold", null, null, woff);
-@include font-face(Inter-Light-BETA, "../fonts/Inter-Light-BETA", null, null, woff);
+@include font-face(Hk-light, "../fonts/WEB/HKGrotesk-Light", null, null, woff);
+@include font-face(Hk-xbold, "../fonts/WEB/HKGrotesk-Extrabold", null, null, woff);
+@include font-face(Hk-reg, "../fonts/WEB/HKGrotesk-Regular", null, null, woff);
+@include font-face(Hk-bold, "../fonts/WEB/HKGrotesk-Bold", null, null, woff);
 
-$light: Inter-Light-BETA;
-$bold: Inter-Bold;
+$light: Hk-light;
+$bold: Hk-bold;
 $color: #80DEEA;
 
 //portfolio piece colors
@@ -62,98 +64,154 @@ $piaro: #f38638;
 $qfc: #81a565;
 $astro: #9DD19C;
 $side: rgb(45, 130, 226);
+$gray: #585858;
 
 html {
 	overflow-y: scroll;
 	scroll-behavior: smooth;
-}
-* {
 	font-family: $light;
 }
 
-.container {
-	padding: 1em 2em 1em 2em;
+body {
+	@include mq($from: mobile-sm, $until: tablet) {
+		padding: 1.5em;
+	}
+}
+
+#main {
+	background-image: url(/images/mainbackground.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 	@include mq($from: tablet) {
-		padding: 1em 3em 1em 3em;
+		background-size: cover;
+	}
+	height: 100vh !important;
+	text-align: center;
+}
+
+@mixin header {
+	padding: 1em 0em 1em 1em;
+	position: fixed;
+	@include rfs(28);
+	font-family: Hk-bold;
+	text-decoration: none;
+	color: black;
+}
+
+.leftheader {
+	z-index: 1000;
+	@include header();
+	left: 0;
+	top: 0;
+	@include mq($from: tablet) {
+		left: 1.5em;
+		top: 1em;	
 	}
 }
 
-.header {
-	padding: 1em 0em 1em 0em;
-	@include mq($from: desktop) {
-		padding: 2em 0em 1em 0em;
+.leftheader:hover {
+	color: $color;
+}
+
+.leftheader:hover span {
+	color: black;
+}
+
+.rightheader {
+	z-index: 1000;
+	position: fixed;
+	right: 0;
+	top: 1.5em;
+	@include mq($from: tablet) {
+		right: 3em;
+		top: 4em;	
 	}
 }
 
-.heading, .subheading {
-	@include rfs(32);
-	@include mq($from: desktop, $until: wide) {
-		@include rfs(36);
-	}
-	@include mq($from: wide) {
-		@include rfs(40);
-	}
-	line-height: 1.5em;
+.rightheader .navlink {
+	padding-right: 1em;
+	@include rfs(20);
+	font-family: Hk-reg;
+	color: black;
+}
+
+.navlink:hover {
+	font-family: Hk-bold;
+}
+
+.midheader {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.space {
+	padding-right: 2em;
+}
+
+.midheader .navlink {
+	font-family: $light;
+	color: black;
+}
+
+.midheader .navlink:hover {
+	font-family: $bold;
+	color: $color;
+}
+
+.centered {
+	text-align: center;
+}
+
+@mixin headline {
+	border-bottom: .25em solid $color;
+}
+
+.view-work {
+	@include headline();
+	@include rfs(26);
+	color: black;
 }
 
 .heading {
-	margin-top: 5em;
+	font-family: $light !important;
+	@include rfs(24);
+	margin-top: 14em;
+	margin-bottom: 1em;
+	color: #585858;
+	@include mq($from: tablet, $until: desktop) {
+		margin-top: 20em;
+	}
 	@include mq($from: desktop, $until: wide) {
-		margin-top: 3em;
+		margin-top: 17em;
 	}
 	@include mq($from: wide) {
-		margin-top: 7em;
+		margin-top: 18em;
 	}
+	text-align: center;
 }
 
-.subheading {
-	font-family: $light;
-	margin-bottom: 5em;
-	@include mq($from: desktop, $until: wide) {
-		margin-bottom: 2em;
-	}
-	@include mq($from: wide) {
-		margin-bottom: 6em;
-	}
 
+
+.skills {
+	padding-top: 8em;
+	margin-bottom: 8em;
 }
 
 #portfolio {
-	margin-top: 4em;
-	padding-top: 4em;
-	@include mq($from: wide) {
-		margin-top: 14em;
-		padding-top: 5em;
-	}
+	margin-top: 2em;
+	padding-top: 2em;
 }
 
 @mixin boldhead {
-	font-family: $bold;
+	font-family: Hk-bold;
 	font-weight: normal;
 }
 
 .navlink {
 	@include boldhead();
 	color: black;
-	margin-right: 2em;
-	@include mq($from: mobile-sm, $until: mobile) {
-		@include rfs(14);
-	}
-	@include mq($from:large) {
-		margin-right: 1.2em;
-	}
-
-	@include mq($from:tablet) {
-		margin-right: 2em;
-	}
-
-	@include mq($from:desktop) {
-		@include rfs(18);
-	}
-}
-
-.navlink:hover, .navactive {
-	color: $color;
+	text-align: center;
 }
 
 a {
@@ -168,20 +226,12 @@ a {
 	margin-top: 4em;
 }
 
-.subheader {
-	@include rfs(24);
-	@include mq($from: wide) {
-		@include rfs(28); 
-	}
-	margin-bottom: 0;
-}
-
 
 h1 {
 	@include boldhead();
-	@include rfs(36);
+	@include rfs(32);
 	@include mq($from: wide) {
-		@include rfs(48); 
+		@include rfs(40); 
 	}
 	@include mq($from: desktop, $until: wide) {
 		@include rfs(32);
@@ -190,7 +240,7 @@ h1 {
 
 h2 {
 	@include boldhead();
-	@include rfs(26);
+	@include rfs(32);
 	@include mq($from: wide) {
 		@include rfs(32); 
 	}
@@ -199,6 +249,28 @@ h2 {
 	}
 }
 
+.subheading {
+	font-family: $light;
+	margin-bottom: 5em;
+	@include mq($from: tablet, $until: desktop) {
+		margin-bottom: 9em;
+	}
+	@include mq($from: desktop, $until: wide) {
+		margin-bottom: 7em;
+	}
+	@include mq($from: wide) {
+		margin-bottom: 4em;
+	}
+	text-align: center;
+	@include rfs(32);
+	@include mq($from: desktop, $until: wide) {
+		@include rfs(36);
+	}
+	@include mq($from: wide) {
+		@include rfs(59);
+	}
+	line-height: 1.5em;
+}
 
 h3 {
 	@include boldhead();
@@ -228,10 +300,43 @@ p {
 	margin-bottom: 1em;
 }
 
+em {
+	font-family: $bold;
+}
+
+.subtitle {
+	line-height: 1.5em;
+	margin-top: -0.5em;
+	@include rfs(16);
+	@include mq($from: desktop, $until: wide) {
+		@include rfs(20);
+	}
+	@include mq($from: wide) {
+		@include rfs(24);
+		margin-top: -0.25em;
+	}
+}
+
+.my {
+	padding-top: 0;
+	border-left: 0.5em solid $color;
+}
 
 span {
 	color: $color;
-	@include boldhead();
+	font-family: Hk-bold;
+}
+
+.value {
+	@include mq($from: mobile, $until: tablet) {
+		text-align: center;
+	}
+}
+
+.values {
+	@include mq($from: mobile-sm, $until: tablet) {
+		margin-top: -2em;
+	}
 }
 
 .links {
@@ -275,7 +380,7 @@ span {
 	background-size: 9em;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-bottom: 2em;
+	margin-bottom: 6em;
 	@include mq($from: wide) {
 		height: 10em;
 		background-size: 8em;
@@ -336,9 +441,9 @@ span {
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
 	-webkit-transition-property: transform;
 	transition-property: transform;
 }
@@ -370,31 +475,6 @@ span {
 
 .hvr-grow:hover .underline5, .hvr-grow:focus .underline5, .hvr-grow:active .underline3 {
 	border-bottom: 0.1em solid $side;
-}
-
-.nav-wrapper {
-    height: 2em;
-	line-height: 2em;
-}
-
-.nav-wrapper .nav {
-    height: 2em;
-	line-height: 2em;
-	@include mq($from: desktop) {
-		padding-top: 2em;
-	}
-}
-
-.nav-wrapper .nav.fixed {
-    position: fixed;
-	z-index: 1000;
-	width: 200%;
-	height: 4em;
-	padding-top: 1em;
-	top: 0;
-	background: white;
-	padding-left: 11em;
-	margin-left: -11em;
 }
 
 #call {

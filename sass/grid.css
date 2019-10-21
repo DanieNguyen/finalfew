@@ -13,7 +13,7 @@ img {
 
 .wrapper {
   width: 100%;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .wrapper, .row {
@@ -39,7 +39,7 @@ img {
 @media (min-width: 43.75em) and (max-width: 56.24em) {
   .wrapper {
     width: 95%;
-    max-width: 100%;
+    max-width: 80%;
   }
   .col-1 {
     width: 8.33333%;

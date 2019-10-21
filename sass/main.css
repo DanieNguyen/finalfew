@@ -918,8 +918,8 @@ input, textarea {
 }
 
 .shadow {
-  -webkit-box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
-          box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0.25em 0.25em 0.7em rgba(0, 0, 0, 0.1);
+          box-shadow: 0.25em 0.25em 0.7em rgba(0, 0, 0, 0.1);
 }
 
 hr {

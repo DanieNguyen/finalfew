@@ -1,41 +1,5 @@
 $(document).ready(function () {
 
-	// jQuery methods go here...
-	// cache the element
-	var $navBar = $('.nav');
-	var $navWrap = $('.nav-wrapper');
-
-	// find original navigation bar position
-	var navPos = $navWrap.offset().top;
-
-	// on scroll
-	$(window).scroll(function () {
-
-	// get scroll position from top of the page
-	var scrollPos = $(this).scrollTop();
-
-	// check if scroll position is >= the nav position
-	if (this.innerWidth >= 1600) {
-		if (scrollPos >= navPos + 16) {
-			$navBar.addClass('fixed');
-		} else {
-			$navBar.removeClass('fixed');
-		}
-	} else if (this.innerWidth >= 700 && this.innerWidth < 1600) {
-		if (scrollPos >= navPos) {
-			$navBar.addClass('fixed');
-		} else {
-			$navBar.removeClass('fixed');
-		}
-	} else {
-		if (scrollPos >= navPos - 16) {
-			$navBar.addClass('fixed');
-		} else {
-			$navBar.removeClass('fixed');
-		}
-	}
- 	});
-
 	var img = $('.landingpic').attr('src');
 	console.log(img);
 	var mq = window.matchMedia("(min-width:700px)")

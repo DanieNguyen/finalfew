@@ -24,7 +24,7 @@ img {
 
 .wrapper {
     width: 100%;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 %clearfix {
@@ -52,7 +52,7 @@ img {
 @include mq($from:tablet, $until: desktop) {
     .wrapper {
         width: 95%;
-        max-width: 100%;
+        max-width: 80%;
     }
     @for $i from 1 through $grid-col {
         .col-#{$i} {
