@@ -87,6 +87,9 @@ body {
 		background-size: cover;
 	}
 	height: 100vh !important;
+	@include mq($from: desktop, $until: desktop-reg) {
+		height: 105vh !important;
+	}
 	text-align: center;
 }
 
@@ -175,23 +178,10 @@ body {
 
 .heading {
 	font-family: $light !important;
-	@include rfs(24);
-	margin-top: 14em;
-	margin-bottom: 1em;
+	@include rfs(20);
 	color: #585858;
-	@include mq($from: tablet, $until: desktop) {
-		margin-top: 20em;
-	}
-	@include mq($from: desktop, $until: wide) {
-		margin-top: 17em;
-	}
-	@include mq($from: wide) {
-		margin-top: 18em;
-	}
 	text-align: center;
 }
-
-
 
 .skills {
 	padding-top: 8em;
@@ -251,16 +241,6 @@ h2 {
 
 .subheading {
 	font-family: $light;
-	margin-bottom: 5em;
-	@include mq($from: tablet, $until: desktop) {
-		margin-bottom: 9em;
-	}
-	@include mq($from: desktop, $until: wide) {
-		margin-bottom: 7em;
-	}
-	@include mq($from: wide) {
-		margin-bottom: 4em;
-	}
 	text-align: center;
 	@include rfs(32);
 	@include mq($from: desktop, $until: wide) {
@@ -270,6 +250,16 @@ h2 {
 		@include rfs(59);
 	}
 	line-height: 1.5em;
+}
+
+.mainpage {
+	position: absolute;
+	top:40%;
+}
+
+.mainpage2 {
+	position: absolute;
+	top:75%;
 }
 
 h3 {

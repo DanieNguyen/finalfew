@@ -61,7 +61,19 @@ img {
     }
 }
 
-@include mq($from:desktop) {
+@include mq($from:desktop, $until: wide) {
+    .wrapper {
+        width: 95%;
+        max-width: 45em;
+    }
+    @for $i from 1 through $grid-col {
+        .col-#{$i} {
+            width: 100% / $grid-col * $i;
+        }
+    }
+}
+
+@include mq($from:wide) {
     .wrapper {
         width: 95%;
         max-width: 60em;
