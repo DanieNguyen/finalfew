@@ -370,7 +370,7 @@ span {
 	background-size: 9em;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-bottom: 6em;
+	margin-bottom: 4em;
 	@include mq($from: wide) {
 		height: 10em;
 		background-size: 8em;

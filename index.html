@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daniel Nguyen</title>
     <link rel="stylesheet" href="sass/base.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -16,7 +17,7 @@
 </head>
 <body>
     <div class="row" id="main">
-        <nav>
+        <nav data-aos="fade-down" data-aos-duration="1000">
             <a class="leftheader hvr-grow" href="index.html">daniel<span>.</span></a>
             <div class="rightheader">
                 <a class="navlink hvr-grow" href="about.html">tôi</a>
@@ -24,17 +25,17 @@
                 <a class="navlink hvr-grow" href="resume.pdf" target="_blank">résumé</a>
             </div>
         </nav>
-        <div class="col-12 mainpage">
+        <div class="col-12 mainpage" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="heading"><em>as a human centred designer</em></h2>
             <h1 class="subheading">I tailor <span>experiences</span> to fit peoples' needs.</h1>
         </div>
-        <div class="col-12 mainpage2">
+        <div class="col-12 mainpage2" data-aos="fade-down" data-aos-duration="2000">
             <a class="view-work hvr-grow" href="index.html#portfolio">view my work.</a>
         </div>
     </div>
     <div class="skills">
         <div class="wrapper">
-            <div class="row">
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
                 <div class="col-3 my">
                     <h1>design style</h1>
                 </div>
@@ -42,7 +43,7 @@
                     <p class="subtitle">As a human centred designer, I strive to create and improve experiences for everyone. I believe in <em>designing with people</em>, not for users.</p>
                 </div>
             </div>
-            <div class="row text">
+            <div class="row text" data-aos="fade-left" data-aos-duration="1500">
                 <div class="col-3 my">
                     <h1>values</h1>
                 </div>
@@ -64,7 +65,7 @@
     </div>
     <div class="section">
         <div class="wrapper">
-            <div class="row" id="portfolio">
+            <div class="row" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-6 card hvr-grow">
                     <a class="garbox" href="garmin.html">
                         <div>
@@ -82,7 +83,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-6 card hvr-grow">
                     <a class="hbox" href="hive.html">
                         <div>
@@ -116,5 +117,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                disable: phone, 
+                once: true
+            });
+    </script>
 </body>
 </html>
