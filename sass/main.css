@@ -532,23 +532,12 @@ h3 {
 }
 
 h4 {
-  font-family: Hk-light;
-  font-weight: normal;
-  margin-top: 3em;
-  margin-bottom: 1em;
+  font-family: Hk-bold;
   font-size: 1.25rem;
-}
-
-@media (min-width: 56.25em) {
-  h4 {
-    font-size: 1.375rem;
-  }
-}
-
-@media (min-width: 56.25em) and (max-width: 1200px) {
-  h4 {
-    font-size: calc(1.2625rem + 0.15vw) ;
-  }
+  padding-left: 0.5em;
+  border-left: 0.3em solid #80DEEA;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 p {
@@ -1036,7 +1025,7 @@ span {
 
 @media (min-width: 100em) {
   .intro, .facts {
-    margin-top: 8em;
+    margin-top: 4em;
   }
 }
 
@@ -1138,7 +1127,7 @@ input, textarea {
 
 @media (min-width: 100em) {
   .text {
-    margin-top: 8em;
+    margin-top: 4em;
   }
 }
 
