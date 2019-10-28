@@ -102,6 +102,11 @@ body {
 	color: black;
 }
 
+@mixin boldhead {
+	font-family: Hk-bold;
+	font-weight: normal;
+}
+
 .leftheader {
 	z-index: 1000;
 	@include header();
@@ -133,14 +138,27 @@ body {
 }
 
 .rightheader .navlink {
-	padding-right: 1em;
+	margin-right: 1.5em;
 	@include rfs(20);
 	font-family: Hk-reg;
 	color: black;
 }
 
-.navlink:hover {
-	font-family: Hk-bold;
+.rightheader .toi::after {
+	content: "tôi ";
+	white-space: pre;
+}
+
+.rightheader .toi:hover::after {
+	content: "me";
+}
+
+.rightheader .ben::after {
+	content: "bên";
+}
+
+.rightheader .ben:hover::after {
+	content: "side";
 }
 
 .midheader {
@@ -149,17 +167,12 @@ body {
 }
 
 .space {
-	padding-right: 2em;
+	margin-right: 2em;
 }
 
 .midheader .navlink {
 	font-family: $light;
 	color: black;
-}
-
-.midheader .navlink:hover {
-	font-family: $bold;
-	color: $color;
 }
 
 .centered {
@@ -193,10 +206,7 @@ body {
 	padding-top: 2em;
 }
 
-@mixin boldhead {
-	font-family: Hk-bold;
-	font-weight: normal;
-}
+
 
 .navlink {
 	@include boldhead();
@@ -250,6 +260,11 @@ h2 {
 		@include rfs(59);
 	}
 	line-height: 1.5em;
+}
+
+.subheader {
+	@include rfs(24);
+	font-family: $light;
 }
 
 .mainpage {
@@ -329,15 +344,6 @@ span {
 	}
 }
 
-.links {
-	color: $color;
-	@include boldhead();
-	text-decoration: none;
-}
-
-.links:hover {
-	border-bottom: 1px solid $color;
-}
 .garmin {
 	color: $garmin;
 }
@@ -439,32 +445,106 @@ span {
 }
 
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-	-webkit-transform: scale(1.07);
-	transform: scale(1.07);
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08);
 }
 
-.hvr-grow:hover .underline, .hvr-grow:focus .underline, .hvr-grow:active .underline {
-	border-bottom: 0.1em solid $garmin;
+.hvr-float {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+  }
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+  }
+
+  /* Underline From Left */
+.hvr-underline-from-left {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
 }
 
-.hvr-grow:hover .underline1, .hvr-grow:focus .underline1, .hvr-grow:active .underline1 {
-	border-bottom: 0.1em solid $hive;
+.hvr-underline-from-left:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	background: $color;
+	height: 0.2em;
+	-webkit-transition-property: right;
+	transition-property: right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
-.hvr-grow:hover .underline2, .hvr-grow:focus .underline2, .hvr-grow:active .underline2 {
-	border-bottom: 0.1em solid $piaro;
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+	right: 0;
 }
 
-.hvr-grow:hover .underline3, .hvr-grow:focus .underline3, .hvr-grow:active .underline3 {
-	border-bottom: 0.1em solid $qfc;
+.hvr-grow .underline:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+	width: 0%; /* Change this to whatever width you want to have before hover. */
+    border-bottom: 0.2em solid $garmin; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
 }
 
-.hvr-grow:hover .underline4, .hvr-grow:focus .underline4, .hvr-grow:active .underline3 {
-	border-bottom: 0.1em solid $astro;
+.hvr-grow:hover .underline:after, .hvr-grow:focus .underline, .hvr-grow:active .underline {
+	width: 100%;
 }
 
-.hvr-grow:hover .underline5, .hvr-grow:focus .underline5, .hvr-grow:active .underline3 {
-	border-bottom: 0.1em solid $side;
+.hvr-grow .underline1:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+	width: 0%; /* Change this to whatever width you want to have before hover. */
+    border-bottom: 0.2em solid $astro; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.hvr-grow:hover .underline1:after, .hvr-grow:focus .underline, .hvr-grow:active .underline {
+	width: 100%;
+}
+
+.hvr-grow .underline2:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+	width: 0%; /* Change this to whatever width you want to have before hover. */
+    border-bottom: 0.2em solid $hive; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.hvr-grow:hover .underline2:after, .hvr-grow:focus .underline, .hvr-grow:active .underline {
+	width: 100%;
+}
+
+.hvr-grow .underline3:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+	width: 0%; /* Change this to whatever width you want to have before hover. */
+    border-bottom: 0.2em solid $qfc; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.hvr-grow:hover .underline3:after, .hvr-grow:focus .underline, .hvr-grow:active .underline {
+	width: 100%;
 }
 
 #call {

@@ -610,7 +610,7 @@ span {
   background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
   background-image: url("../images/garmin.svg");
 }
 
@@ -645,7 +645,7 @@ span {
   background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
   background-image: url("../images/hivequeen.svg");
 }
 
@@ -680,7 +680,7 @@ span {
   background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
   background-size: 12em;
   background-image: url("../images/chat.svg");
 }
@@ -722,7 +722,7 @@ span {
   background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
   background-image: url("../images/astro.svg");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -762,7 +762,7 @@ span {
   background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
   background-image: url("../images/qfc.svg");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -809,7 +809,7 @@ span {
   background-size: 9em;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
   background-image: url("../images/side.png");
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
