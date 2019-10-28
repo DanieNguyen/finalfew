@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daniel Nguyen</title>
     <link rel="stylesheet" href="sass/base.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -19,54 +20,58 @@
 <body>
     <div class="row">
         <nav data-aos="fade-down" data-aos-duration="1000">
-                <a class="leftheader" href="index.html">daniel<span>.</span></a>
-                <div class="rightheader">
-                    <a class="navlink hvr-underline-from-left ben" href="sideprojects.html"></a>
-                    <a class="navlink hvr-underline-from-left toi" href="about.html"></a>
-                    <a class="navlink hvr-underline-from-left" href="resume.pdf" target="_blank">résumé</a>
-                </div>
+            <a class="leftheader" href="index.html">daniel<span>.</span></a>
+            <div class="rightheader">
+                <a class="navlink hvr-underline-from-left ben" href="sideprojects.html"></a>
+                <a class="navlink hvr-underline-from-left toi" href="about.html"></a>
+                <a class="navlink hvr-underline-from-left" href="resume.pdf" target="_blank">résumé</a>
+            </div>
         </nav>
     </div>
     <div class="wrapper">
-        <div class="row intro">
-            <div class="col-8">
-                <h1 class="astro">Astro</h1>
-                <h2 class="subheader">Course Project</h2>
+        <div data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">
+            <div class="row intro">
+                    <div class="col-8">
+                        <h1 class="astro">Astro</h1>
+                        <h2 class="subheader">Course Project</h2>
+                    </div>
             </div>
-        </div>
-        <div class="col-12">
-            <img class="landingpic" src="images/astrolanding">
-        </div>
-        <div class="row text">
             <div class="col-12">
-                <h3 class="overview">Overview</h3>
+                <img class="landingpic" src="images/astrolanding">
             </div>
-            <div class='col-7'>
-                <p>For an HCI course, I worked with a team for three CSE students to go through the user-centered design process. During the three months of the course, we conducted user research through interviews, ideated and designed from low fidelity to high fidelity, and tested with users and classmates. </p>
-                <p>Our team designed Astro for dog owners who can be away from home for long periods of time like a full work day or vacations. Astro is a robot companion for dogs and dog owners that allows dog owners to feed, let out, and play with their dogs remotely. </p>
-            </div>
-            <div class="col-5">
-                <table>
-                    <tr>
-                        <th class="first">Role</th>
-                        <td class="first">Lead Researcher and Designer</td>
-                    </tr>
-                    <tr>
-                        <th>Team</th>
-                        <td>Three CSE Students + Me</td>
-                    </tr>
-                    <tr>
-                        <th>Project</th>
-                        <td>Dog Monitoring Robot and Companion App</td>
-                    </tr>
-                    <tr>
-                        <th>Timeline</th>
-                        <td>March - June 2019</td>
-                    </tr>
-                </table>
+            <div class="row text">
+                    <div class="col-12">
+                        <h3 class="overview">Overview</h3>
+                    </div>
+                    <div class='col-7'>
+                        <p>For an HCI course, I worked with a team for three CSE students to go through the user-centered design process. During the three months of the course, we conducted user research through interviews, ideated and designed from low fidelity to high fidelity, and tested with users and classmates. </p>
+                        <p>Our team designed Astro for dog owners who can be away from home for long periods of time like a full work day or vacations. Astro is a robot companion for dogs and dog owners that allows dog owners to feed, let out, and play with their dogs remotely. </p>
+                    </div>
+                    <div class="col-5">
+                        <table>
+                            <tr>
+                                <th class="first">Role</th>
+                                <td class="first">Lead Researcher and Designer</td>
+                            </tr>
+                            <tr>
+                                <th>Team</th>
+                                <td>Three CSE Students + Me</td>
+                            </tr>
+                            <tr>
+                                <th>Project</th>
+                                <td>Dog Monitoring Robot and Companion App</td>
+                            </tr>
+                            <tr>
+                                <th>Timeline</th>
+                                <td>March - June 2019</td>
+                            </tr>
+                        </table>
+                    </div>
             </div>
         </div>
-        <div class="row">
+        
+        
+        <div class="row" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">
             <div class="col-12">
                 <p class="subheader">Please read about this project <a class="links" href="https://medium.com/@danngu_26559/astro-239b5a46a73e" target="_blank">on Medium.</a></p>
             </div>
@@ -89,6 +94,14 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                disable: 'mobile',
+                once: true,
+            });
+    </script>
 </body>
 
 </html>

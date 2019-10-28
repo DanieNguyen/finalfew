@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daniel Nguyen</title>
     <link rel="stylesheet" href="sass/base.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css.map">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -28,44 +29,46 @@
                 </nav>
     </div>
     <div class="wrapper">
-        <div class="row intro">
+        <div data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500">
+            <div class="row intro">
+                <div class="col-12">
+                    <h1 class="side">bên - side</h1>
+                    <h2 class="subheader">Graphic Design, UI Design, Code, and Spontaneous Ideas</h2>
+                </div>
+            </div>
             <div class="col-12">
-                <h1 class="side">bên - side</h1>
-                <p class="subheader">Graphic Design, UI Design, Code, and Spontaneous Ideas</p>
+                <img class="landingpic" src="images/sideprojectslanding" alt="side projects landing page picture">
+            </div>
+            <div class="row text">
+                <div class="col-12">
+                    <h3 class="overview">Overview</h3>
+                </div>
+                <div class='col-7'>
+                    <p>Because design is more than just a career path for me, I find myself wanting to create random projects for myself often. Some of these projects are rough because of my designer's block, but I hope they can entertain you like they entertain me. Here are some of my recent homemade designs and ideas.</p>
+                </div>
+                <div class="col-5">
+                    <table>
+                        <tr>
+                            <th class="first">Role</th>
+                            <td class="first">Designer, Creator, Coder</td>
+                        </tr>
+                        <tr>
+                            <th>Team</th>
+                            <td>Individual</td>
+                        </tr>
+                        <tr>
+                            <th>Project</th>
+                            <td>Various</td>
+                        </tr>
+                        <tr>
+                            <th>Timeline</th>
+                            <td>Whenever I Feel Productive at Home</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-        <div class="col-12">
-            <img class="landingpic" src="images/sideprojectslanding" alt="side projects landing page picture">
-        </div>
-        <div class="row text">
-            <div class="col-12">
-                <h3 class="overview">Overview</h3>
-            </div>
-            <div class='col-7'>
-                <p>Because design is more than just a career path for me, I find myself wanting to create random projects for myself often. Some of these projects are rough because of my designer's block, but I hope they can entertain you like they entertain me. Here are some of my recent homemade designs and ideas.</p>
-            </div>
-            <div class="col-5">
-                <table>
-                    <tr>
-                        <th class="first">Role</th>
-                        <td class="first">Designer, Creator, Coder</td>
-                    </tr>
-                    <tr>
-                        <th>Team</th>
-                        <td>Individual</td>
-                    </tr>
-                    <tr>
-                        <th>Project</th>
-                        <td>Various</td>
-                    </tr>
-                    <tr>
-                        <th>Timeline</th>
-                        <td>Whenever I Feel Productive at Home</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="row text">
+        <div class="row text" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-center">
             <div class="col-5">
                 <h3>Sideline</h3>
                 <p>For my first Dribble post, I was inspired to wholly focus on what I wanted to visually create. This was not a UX project, but a graphic design exercise for myself (unless you want to count me as a reflexive user) to practice new aesthetic trends. </p>
@@ -78,7 +81,7 @@
                 </a>
             </div>
         </div>
-        <div class="row text">
+        <div class="row text" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-center">
             <div class="col-5">
                 <h3>This Website</h3>
                 <p>Although I have used Wix, HTML Templates, and other website creation tools before, I wanted to challenge myself this summer to design, code, and implement my own website. Even though I am terrible at coding, it is always fun solving how to make everything formatted and user-friendly.</p>
@@ -89,7 +92,7 @@
                 </a>
             </div>
         </div>
-        <div class="row text">
+        <div class="row text" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-center">
             <div class="col-5">
                 <h3>Mele</h3>
                 <p>To explore logo designs, I have been coming up with random mobile apps that I think would be useful. Mele is a music streaming service similar to Pandora. However, the app would use computer learning/AI to allow users to customize stations through options like tempo, instruments played, language, and genre.</p>
@@ -116,6 +119,14 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                disable: 'mobile',
+                once: true,
+            });
+    </script>
 </body>
 
 </html>
