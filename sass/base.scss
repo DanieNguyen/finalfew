@@ -206,6 +206,7 @@ html {
 	text-align: center;
 }
 
+
 @mixin headline {
 	border-bottom: .25em solid $color;
 }
@@ -316,14 +317,12 @@ h3 {
 }
 
 h4 {
-	font-family: $light;
-	font-weight: normal;
-	margin-top: 3em;
-	margin-bottom: 1em;
+	font-family: $bold;
 	@include rfs(20);
-	@include mq($from: desktop) {
-		@include rfs(22); 
-	}
+	padding-left: 0.5em;
+	border-left: 0.3em solid $color;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 p {
@@ -586,7 +585,7 @@ span {
 @mixin spacing {
 	margin-top: 1em;
 	@include mq($from: wide) {
-		margin-top: 8em;
+		margin-top: 4em;
 	}
 	@include mq($from: desktop, $until: wide) {
 		margin-top: 6em;
