@@ -534,8 +534,6 @@ h3 {
 h4 {
   font-family: Hk-bold;
   font-size: 1.25rem;
-  padding-left: 0.5em;
-  border-left: 0.3em solid #80DEEA;
   margin-bottom: 1em;
   margin-top: 1em;
 }
@@ -548,6 +546,7 @@ p {
 
 em {
   font-family: Hk-bold;
+  font-style: normal;
 }
 
 .subtitle {
@@ -597,8 +596,37 @@ span {
   }
 }
 
+.floright {
+  display: none;
+}
+
+@media (min-width: 43.75em) {
+  .floright {
+    display: block;
+    float: right;
+    width: 45%;
+    margin-left: 1.5em;
+    height: 250px !important;
+  }
+}
+
+.floleft {
+  display: none;
+}
+
+@media (min-width: 43.75em) {
+  .floleft {
+    display: block;
+    float: left;
+    width: 45%;
+    margin-right: 1.5em;
+    height: 250px !important;
+  }
+}
+
 .garmin {
   color: #007cc3;
+  white-space: pre;
 }
 
 .hive {
