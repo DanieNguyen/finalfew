@@ -1270,6 +1270,11 @@ ul li, ol li {
   border-bottom: 0.2em solid #9DD19C;
 }
 
+.robot {
+  width: auto;
+  height: 175px !important;
+}
+
 .footer {
   margin-top: -2em;
 }

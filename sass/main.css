@@ -624,7 +624,7 @@ span {
   .floright {
     display: block;
     float: right;
-    width: 100%;
+    width: auto;
     margin-left: 1.5em;
     height: 250px !important;
   }
