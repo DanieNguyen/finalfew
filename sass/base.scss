@@ -165,7 +165,7 @@ html {
 
 
 .rightheader .navlink {
-	margin-right: 1.5em;
+	margin-right: 1em;
 	@include rfs(20);
 	font-family: Hk-reg;
 	color: black;
@@ -317,7 +317,7 @@ h3 {
 }
 
 h4 {
-	font-family: $bold;
+	@include boldhead();
 	@include rfs(20);
 	margin-bottom: 1em;
 	margin-top: 1em;
@@ -362,6 +362,11 @@ em {
 span {
 	color: $color;
 	font-family: Hk-bold;
+}
+
+.doggo {
+	margin-top: 1em;
+	width: 50%;
 }
 
 .value {
@@ -764,9 +769,6 @@ hr {
 
 ul, ol {
 	margin: 2em 2em 2em 2em;
-	@include mq($from: desktop) {
-		margin: 2em 6em 2em 6em;
-	}
 }
 
 ul {
@@ -775,6 +777,10 @@ ul {
 
 ul li, ol li {
 	padding-bottom: 1em;
+}
+
+.astroline {
+	border-bottom: 0.2em solid $astro;
 }
 
 .footer {

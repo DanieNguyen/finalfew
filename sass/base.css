@@ -291,7 +291,7 @@ html {
 }
 
 .rightheader .navlink {
-  margin-right: 1.5em;
+  margin-right: 1em;
   font-size: 1.25rem;
   font-family: Hk-reg;
   color: black;
@@ -533,6 +533,7 @@ h3 {
 
 h4 {
   font-family: Hk-bold;
+  font-weight: normal;
   font-size: 1.25rem;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -596,6 +597,11 @@ em {
 span {
   color: #80DEEA;
   font-family: Hk-bold;
+}
+
+.doggo {
+  margin-top: 1em;
+  width: 50%;
 }
 
 @media (min-width: 25em) and (max-width: 43.74em) {
@@ -1252,18 +1258,16 @@ ul, ol {
   margin: 2em 2em 2em 2em;
 }
 
-@media (min-width: 56.25em) {
-  ul, ol {
-    margin: 2em 6em 2em 6em;
-  }
-}
-
 ul {
   list-style-type: circle;
 }
 
 ul li, ol li {
   padding-bottom: 1em;
+}
+
+.astroline {
+  border-bottom: 0.2em solid #9DD19C;
 }
 
 .footer {
