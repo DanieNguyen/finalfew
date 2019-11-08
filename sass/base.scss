@@ -386,7 +386,7 @@ span {
 	@include mq($from: tablet) {
 		display: block;
 		float: right;
-		width: 45%;
+		width: auto;
 		margin-left: 1.5em;
 		height: 250px !important;
 	}
@@ -783,6 +783,10 @@ ul li, ol li {
 	border-bottom: 0.2em solid $astro;
 }
 
+.robot {
+	width: auto;
+	height: 175px !important;
+}
 .footer {
 	@include mq($from: tablet) {
 		text-align: right;

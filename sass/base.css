@@ -624,7 +624,7 @@ span {
   .floright {
     display: block;
     float: right;
-    width: 45%;
+    width: auto;
     margin-left: 1.5em;
     height: 250px !important;
   }
@@ -1268,6 +1268,11 @@ ul li, ol li {
 
 .astroline {
   border-bottom: 0.2em solid #9DD19C;
+}
+
+.robot {
+  width: auto;
+  height: 175px !important;
 }
 
 .footer {
