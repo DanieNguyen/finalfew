@@ -752,7 +752,11 @@ hr {
 	margin-bottom: 4em;
 }
 
-
+.caption {
+	@include rfs(12);
+	color: $gray;
+	font-style: italic;
+}
 
 .next {
 	padding-left: 2em;
