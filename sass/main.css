@@ -1079,7 +1079,7 @@ span {
 
 @media (min-width: 56.25em) and (max-width: 99.99em) {
   .intro, .facts {
-    margin-top: 6em;
+    margin-top: 2em;
   }
 }
 
@@ -1181,7 +1181,7 @@ input, textarea {
 
 @media (min-width: 56.25em) and (max-width: 99.99em) {
   .text {
-    margin-top: 6em;
+    margin-top: 2em;
   }
 }
 
@@ -1239,6 +1239,12 @@ hr {
   color: black;
   font-family: Hk-light;
   margin-bottom: 4em;
+}
+
+.caption {
+  font-size: 0.75rem;
+  color: #585858;
+  font-style: italic;
 }
 
 .next {
