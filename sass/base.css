@@ -1241,6 +1241,12 @@ hr {
   margin-bottom: 4em;
 }
 
+.caption {
+  font-size: 0.75rem;
+  color: #585858;
+  font-style: italic;
+}
+
 .next {
   padding-left: 2em;
 }
