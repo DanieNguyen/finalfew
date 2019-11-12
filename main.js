@@ -1,9 +1,14 @@
 $(document).ready(function () {
 
 	var img = $('.landingpic').attr('src');
+	console.log(img);
 	var mq = window.matchMedia("(min-width:700px)")
 	if (mq.matches) {
-		var newImg = img + ".jpg";
+		if (img == "images/astrolanding") {
+			var newImg = img + ".png";
+		} else {
+			var newImg = img + ".jpg";
+		}
 		$('.landingpic').attr('src', newImg);
 	} else {
 		var newImg = img + "-sm.jpg";
