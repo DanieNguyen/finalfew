@@ -189,7 +189,7 @@ img {
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
-  font-family: Hk-light;
+  font-family: Hk-reg;
 }
 
 #main {
@@ -215,35 +215,30 @@ html {
 
 .leftheader {
   z-index: 1000;
-  padding: 1em 0em 1em 1em;
-  position: fixed;
-  font-size: 1.75rem;
-  font-family: Hk-bold;
-  text-decoration: none;
-  color: black;
   left: 0;
   top: 0;
-}
-
-@media (max-width: 1200px) {
-  .leftheader {
-    font-size: calc(1.3rem + 0.6vw) ;
-  }
+  position: fixed;
 }
 
 @media (min-width: 43.75em) {
   .leftheader {
-    left: 1.5em;
+    left: 2.5em;
     top: 1em;
   }
 }
 
-.leftheader:hover {
-  color: #80DEEA;
+.leftheader a {
+  font-size: 1.75rem;
+  margin: 1em 0em 1em 1em;
+  font-family: Hk-bold;
+  text-decoration: none;
+  color: black;
 }
 
-.leftheader:hover span {
-  color: black;
+@media (max-width: 1200px) {
+  .leftheader a {
+    font-size: calc(1.3rem + 0.6vw) ;
+  }
 }
 
 .rightheader {
@@ -324,7 +319,7 @@ html {
 }
 
 .midheader .navlink {
-  font-family: Hk-light;
+  font-family: Hk-reg;
   color: black;
 }
 
@@ -345,7 +340,7 @@ html {
 }
 
 .heading {
-  font-family: Hk-light !important;
+  font-family: Hk-reg !important;
   font-size: 1.25rem;
   color: #585858;
   text-align: center;
@@ -453,7 +448,7 @@ h2 {
 }
 
 .subheading {
-  font-family: Hk-light;
+  font-family: Hk-reg;
   text-align: center;
   font-size: 2rem;
   line-height: 1.5em;
@@ -491,7 +486,7 @@ h2 {
 
 .subheader {
   font-size: 1.5rem;
-  font-family: Hk-light;
+  font-family: Hk-reg;
 }
 
 @media (max-width: 1200px) {
@@ -625,7 +620,7 @@ span {
     display: block;
     float: right;
     width: auto;
-    margin-left: 1.5em;
+    margin-left: 4em;
     height: 250px !important;
   }
 }
@@ -639,7 +634,7 @@ span {
     display: block;
     float: left;
     width: 45%;
-    margin-right: 1.5em;
+    margin-right: 2em;
     height: 250px !important;
   }
 }
@@ -973,7 +968,7 @@ span {
   right: 100%;
   bottom: 0;
   background: #80DEEA;
-  height: 0.2em;
+  height: 0.15em;
   -webkit-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.3s;
@@ -1077,7 +1072,13 @@ span {
   }
 }
 
-@media (min-width: 56.25em) and (max-width: 99.99em) {
+@media (min-width: 56.25em) and (max-width: 74.99em) {
+  .intro, .facts {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 75em) and (max-width: 99.99em) {
   .intro, .facts {
     margin-top: 2em;
   }
@@ -1114,7 +1115,7 @@ input, textarea {
   width: 100%;
   border: 1px solid gray;
   border-radius: 4px;
-  font-family: Hk-light;
+  font-family: Hk-reg;
   padding: 0.75em 0.5em 0.75em 0.5em;
   margin: 0.5em 0 1.5em 0;
   font-size: 1em;
@@ -1179,7 +1180,13 @@ input, textarea {
   }
 }
 
-@media (min-width: 56.25em) and (max-width: 99.99em) {
+@media (min-width: 56.25em) and (max-width: 74.99em) {
+  .text {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 75em) and (max-width: 99.99em) {
   .text {
     margin-top: 2em;
   }
@@ -1188,12 +1195,6 @@ input, textarea {
 .me {
   -webkit-box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
           box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 43.75em) {
-  .me {
-    max-width: 400px;
-  }
 }
 
 .shadow {
@@ -1237,23 +1238,18 @@ hr {
 
 .pagination {
   color: black;
-  font-family: Hk-light;
+  font-family: Hk-reg;
   margin-bottom: 4em;
 }
 
 .caption {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #585858;
   font-style: italic;
 }
 
 .next {
   padding-left: 2em;
-}
-
-.pagination:hover {
-  color: #80DEEA;
-  font-family: Hk-bold;
 }
 
 .landing {

@@ -53,7 +53,7 @@
 @include font-face(Hk-reg, "../fonts/WEB/HKGrotesk-Regular", null, null, woff);
 @include font-face(Hk-bold, "../fonts/WEB/HKGrotesk-Bold", null, null, woff);
 
-$light: Hk-light;
+$light: Hk-reg;
 $bold: Hk-bold;
 $color: #80DEEA;
 
@@ -88,9 +88,8 @@ html {
 }
 
 @mixin header {
-	padding: 1em 0em 1em 1em;
-	position: fixed;
 	@include rfs(28);
+	margin: 1em 0em 1em 1em;
 	font-family: Hk-bold;
 	text-decoration: none;
 	color: black;
@@ -103,21 +102,17 @@ html {
 
 .leftheader {
 	z-index: 1000;
-	@include header();
 	left: 0;
 	top: 0;
+	position: fixed;
 	@include mq($from: tablet) {
-		left: 1.5em;
+		left: 2.5em;
 		top: 1em;	
 	}
 }
 
-.leftheader:hover {
-	color: $color;
-}
-
-.leftheader:hover span {
-	color: black;
+.leftheader a {
+	@include header();
 }
 
 .rightheader {
@@ -387,7 +382,7 @@ span {
 		display: block;
 		float: right;
 		width: auto;
-		margin-left: 1.5em;
+		margin-left: 4em;
 		height: 250px !important;
 	}
 }
@@ -398,7 +393,7 @@ span {
 		display: block;
 		float: left;
 		width: 45%;
-		margin-right: 1.5em;
+		margin-right: 2em;
 		height: 250px !important;
 	}
 }
@@ -546,7 +541,7 @@ span {
 	right: 100%;
 	bottom: 0;
 	background: $color;
-	height: 0.2em;
+	height: 0.15em;
 	-webkit-transition-property: right;
 	transition-property: right;
 	-webkit-transition-duration: 0.3s;
@@ -621,7 +616,10 @@ span {
 	@include mq($from: wide) {
 		margin-top: 4em;
 	}
-	@include mq($from: desktop, $until: wide) {
+	@include mq($from: desktop, $until: desktop-reg) {
+		margin-top: 2em;
+	}
+	@include mq($from: desktop-reg, $until: wide) {
 		margin-top: 2em;
 	}
 }
@@ -709,9 +707,6 @@ input {
 
 .me {
 	box-shadow: 0em .25em .5em rgba(0, 0, 0, 0.2);
-	@include mq($from: tablet) {
-		max-width: 400px;
-	}
 }
 
 .shadow {
@@ -748,12 +743,12 @@ hr {
 
 .pagination {
 	color: black;
-	font-family: $light;
+	font-family: Hk-reg;
 	margin-bottom: 4em;
 }
 
 .caption {
-	@include rfs(12);
+	@include rfs(16);
 	color: $gray;
 	font-style: italic;
 }
@@ -762,14 +757,10 @@ hr {
 	padding-left: 2em;
 }
 
-.pagination:hover {
-	color: $color;
-	font-family: $bold;
-}
-
 .landing {
 	text-align: center;
 }
+
 
 ul, ol {
 	margin: 2em 2em 2em 2em;
